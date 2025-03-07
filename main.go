@@ -14,6 +14,12 @@ func add(a, b int) int {
 	return sum
 }
 
+type Person struct {
+	Name string
+	Age  int
+	City string
+}
+
 func main() {
 	fmt.Println("HELLOW world")
 	var intNum int16 = 200
@@ -64,4 +70,18 @@ func main() {
 	array := [5]int{10, 20, 30, 40, 50}
 	slice := array[1:4]
 	fmt.Println(slice)
+
+	person1 := Person{
+		Name: "Alice",
+		Age:  30,
+		City: "London",
+	}
+
+	var person2 Person
+	person2.Name = "Bob"
+	person2.Age = 25
+	person2.City = "New York"
+
+	fmt.Println(person1.Name, person1.Age, person1.City)
+	fmt.Println(person2.Name, person2.Age, person2.City)
 }
