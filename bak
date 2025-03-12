@@ -1,0 +1,134 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Fraction struct {
+	numerator   int
+	denominator int
+}
+
+// func AddFraction(f1, f2 Fraction) Fraction {
+
+// }
+
+func (f1 Fraction) Add(f2 Fraction) Fraction {
+	return Fraction{
+		numerator:   0,
+		denominator: 0,
+	}
+}
+
+func multiply(a, b int) int {
+	product := a * b
+	return product
+}
+
+func add(a, b int) int {
+	sum := a + b
+	return sum
+}
+
+func testPointer(p *int) int {
+	x := 0
+	p = &x
+	return 1
+}
+
+type Person struct {
+	Name string
+	Age  int
+	City string
+}
+
+func main() {
+	fmt.Println("HELLOW world")
+	var intNum int16 = 200
+	myNum := -3.14
+	a, b := 10, "hello"
+	var (
+		c int    = 1
+		d string = "example"
+	)
+	if len(d) > len(b) {
+		fmt.Println("1st true")
+	} else if a > c {
+		fmt.Println("2nd true")
+	} else {
+		fmt.Println("else true")
+	}
+
+	for i := 0; i < 5; i++ {
+		fmt.Println(i)
+	}
+
+	count := 0
+	for count < 5 {
+		fmt.Println("Count:", count)
+		count++
+	}
+
+	result := multiply(4, 6)
+	fmt.Println("Multiplied:", result)
+
+	resulta := add(5, 3)
+	fmt.Println("Added:", resulta)
+
+	fmt.Println(intNum)
+	fmt.Println(myNum)
+
+	numbers := []int{1, 2, 3}
+	numbers = append(numbers, 4)
+	fmt.Println(numbers)
+
+	array := [5]int{10, 20, 30, 40, 50}
+	slice := array[1:4]
+	fmt.Println(slice)
+
+	var myArr = make([]int8, 3)
+	fmt.Println(myArr[0], myArr[1], myArr[2])
+
+	var test [3]int
+	fmt.Println(test[0], test[1], test[2])
+
+	var newArr []int8 = make([]int8, 0)
+	newArr = append(newArr, 125)
+	fmt.Println(newArr)
+
+	exVar := 0
+	// exVar = testPointer()
+	// fmt.Println(&exVar)
+	// testPointer(&exVar)
+	println(exVar)
+
+	// f1 := Fraction{numerator: 1, denominator: 2}
+	// f1.Add(f2)
+	person := map[string]string{
+		"name": "Alice",
+		"city": "New York",
+	}
+	person["age"] = "30"
+	fmt.Println(person)
+
+	person1 := Person{
+		Name: "Alice",
+		Age:  30,
+		City: "London",
+	}
+
+	var person2 Person
+	person2.Name = "Bob"
+	person2.Age = 25
+	person2.City = "New York"
+
+	fmt.Println(person1.Name, person1.Age, person1.City)
+	fmt.Println(person2.Name, person2.Age, person2.City)
+
+	person3 := Person{
+		Name: "Alice",
+		Age:  30,
+	}
+
+	fmt.Println(person3)
+}

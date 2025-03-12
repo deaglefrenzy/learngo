@@ -1,87 +1,76 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"os"
 )
 
-func multiply(a, b int) int {
-	product := a * b
-	return product
-}
-
-func add(a, b int) int {
-	sum := a + b
-	return sum
-}
-
 type Person struct {
-	Name string
-	Age  int
-	City string
+	Name  string `json:"name"`
+	Age   int    `json:"age"`
+	Email string `json:"email"`
+}
+
+func StructToJSON(data any) (string, error) {
+	dataJSON, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return "", err
+	}
+	return string(dataJSON), nil
+}
+
+func JSONToStruct(jsonStr string, result any) error {
+	return json.Unmarshal([]byte(jsonStr), result)
+}
+
+func WriteJSONFile(filename string, data any) error {
+	dataJSON, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(filename, dataJSON, 0644)
+}
+
+func ReadJSONFile(filename string, result any) error {
+	fileData, err := os.ReadFile(filename)
+	if err != nil {
+		return err
+	}
+	return json.Unmarshal(fileData, result)
 }
 
 func main() {
-	fmt.Println("HELLOW world")
-	var intNum int16 = 200
-	myNum := -3.14
-	a, b := 10, "hello"
-	var (
-		c int    = 1
-		d string = "example"
-	)
-	if len(d) > len(b) {
-		fmt.Println("1st true")
-	} else if a > c {
-		fmt.Println("2nd true")
-	} else {
-		fmt.Println("else true")
+	person := Person{Name: "Suryo", Age: 40, Email: "suryo@suryo.com"}
+
+	jsonStr, err := StructToJSON(person)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
 	}
+	fmt.Println("Output:\n", jsonStr)
 
-	for i := 0; i < 5; i++ {
-		fmt.Println(i)
+	var newPerson Person
+	err = JSONToStruct(jsonStr, &newPerson)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
 	}
+	fmt.Println("Output :", newPerson)
 
-	count := 0
-	for count < 5 {
-		fmt.Println("Count:", count)
-		count++
+	filename := "person.json"
+	err = WriteJSONFile(filename, person)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
 	}
+	fmt.Println("File JSON :", filename)
 
-	result := multiply(4, 6)
-	fmt.Println("Multiplied:", result)
-
-	resulta := add(5, 3)
-	fmt.Println("Added:", resulta)
-
-	fmt.Println(intNum)
-	fmt.Println(myNum)
-
-	person := map[string]string{
-		"name": "Alice",
-		"city": "New York",
+	var filePerson Person
+	err = ReadJSONFile(filename, &filePerson)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
 	}
-	person["age"] = "30"
-	fmt.Println(person)
-
-	numbers := []int{1, 2, 3}
-	numbers = append(numbers, 4)
-	fmt.Println(numbers)
-
-	array := [5]int{10, 20, 30, 40, 50}
-	slice := array[1:4]
-	fmt.Println(slice)
-
-	person1 := Person{
-		Name: "Alice",
-		Age:  30,
-		City: "London",
-	}
-
-	var person2 Person
-	person2.Name = "Bob"
-	person2.Age = 25
-	person2.City = "New York"
-
-	fmt.Println(person1.Name, person1.Age, person1.City)
-	fmt.Println(person2.Name, person2.Age, person2.City)
+	fmt.Println("Output :", filePerson)
 }
