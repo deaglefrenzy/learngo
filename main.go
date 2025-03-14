@@ -132,6 +132,8 @@ func Battle(att *Character, def *Character) {
 		damage += att.Mana / 2
 		att.Mana /= 2
 		fmt.Printf("%s used magic attack! Remaining mana: %d\n", att.BaseStatus.Name, att.Mana)
+
+		SaveToJSON("char-mage.json", *att)
 	}
 
 	if def.Class == "paladin" {
@@ -152,19 +154,9 @@ func Battle(att *Character, def *Character) {
 		fmt.Printf("%s has been defeated!\n", def.BaseStatus.Name)
 	}
 
-	newData := Character{
-		BaseStatus: BaseStatus{
-			Name:   def.BaseStatus.Name,
-			Health: newHealth,
-			Attack: def.BaseStatus.Attack,
-		},
-		Class:    def.Class,
-		Shield:   def.Shield,
-		Critical: def.Critical,
-		Mana:     def.Mana,
-	}
 	filename := "char-" + def.Class + ".json"
-	SaveToJSON(filename, newData)
+	SaveToJSON(filename, *def)
+
 }
 
 func main() {
