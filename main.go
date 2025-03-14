@@ -61,7 +61,7 @@ func NewPaladin(name string) error {
 			Attack: 15,
 		},
 		Class:  "paladin",
-		Shield: 5,
+		Shield: 8,
 	}
 	filename := "char-" + data.GetClass() + ".json"
 	SaveToJSON(filename, data)
@@ -142,6 +142,7 @@ func Battle(att *Character, def *Character) {
 		if damage < 0 {
 			damage = 0
 		}
+		def.Shield -= 1
 	}
 
 	newHealth := def.BaseStatus.Health - damage

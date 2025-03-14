@@ -1,9 +1,9 @@
 {
   "baseStatus": {
     "Name": "Omni",
-    "Health": 99,
+    "Health": 102,
     "Attack": 15
   },
   "class": "paladin",
-  "shield": 5
+  "shield": 7
 }
