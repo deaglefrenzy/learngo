@@ -1,0 +1,9 @@
+{
+  "baseStatus": {
+    "Name": "Mirana",
+    "Health": 75,
+    "Attack": 12
+  },
+  "class": "archer",
+  "critical": 20
+}

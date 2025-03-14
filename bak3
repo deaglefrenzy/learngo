@@ -1,0 +1,93 @@
+package main
+
+import (
+	"fmt"
+)
+
+type Character struct {
+	Name   string
+	Health int
+	Attack int
+}
+
+type Paladin struct {
+	Character Character `json:"character"`
+	Shield    int       `json:"shield"`
+	Class     string    `json:"class"`
+}
+
+type Archer struct {
+	Character Character `json:"character"`
+	Critical  int       `json:"critical"`
+	Class     string    `json:"class"`
+}
+
+type Mage struct {
+	Character Character `json:"character"`
+	Mana      int       `json:"mana"`
+	Class     string    `json:"class"`
+}
+
+func (c *Character) GetName() string {
+	return c.Name
+}
+
+func (c *Character) GetHealth() int {
+	return c.Health
+}
+
+func (c *Character) SetHealth(health int) {
+	c.Health = max(health, 0)
+}
+
+func (c *Character) CharStatus() {
+	fmt.Println(c.Name, c.Health, c.Attack)
+}
+
+func NewPaladin(name string) Paladin {
+	return Paladin{
+		Character: Character{
+			Name:   name,
+			Health: 120,
+			Attack: 15,
+		},
+		Shield: 5,
+		Class:  "paladin",
+	}
+}
+
+func NewArcher(name string) Archer {
+	return Archer{
+		Character: Character{
+			Name:   name,
+			Health: 90,
+			Attack: 12,
+		},
+		Critical: 12,
+		Class:    "archer",
+	}
+}
+
+func NewMage(name string) Mage {
+	return Mage{
+		Character: Character{
+			Name:   name,
+			Health: 70,
+			Attack: 18,
+		},
+		Mana:  16,
+		Class: "mage",
+	}
+}
+
+func main() {
+	paladin := NewPaladin("Omni")
+
+	// archer := NewArcher("Mirana")
+	// mage := NewMage("Rubick")
+	//charJSON, err := json.MarshalIndent(paladin, "", "  ")
+	//if err != nil {
+	//fmt.Println(err)
+	//}
+	fmt.Println(paladin)
+}

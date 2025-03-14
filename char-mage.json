@@ -1,0 +1,9 @@
+{
+  "baseStatus": {
+    "Name": "Rubick",
+    "Health": 58,
+    "Attack": 18
+  },
+  "class": "mage",
+  "mana": 16
+}

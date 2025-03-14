@@ -1,0 +1,110 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"os"
+)
+
+type Person struct {
+	Name    string  `json:"name"`
+	Age     int     `json:"age"`
+	Address Address `json:"address"`
+}
+
+type Address struct {
+	Street string `json:"street"`
+	City   string `json:"city"`
+}
+
+type Car struct {
+	Brand string `json:"brand"`
+	Model string `json:"model"`
+	Year  int16  `json:"year"`
+}
+
+func StructToJSON(data any) (string, error) {
+	dataJSON, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return "", err
+	}
+	return string(dataJSON), nil
+}
+
+func JSONToStruct(jsonStr string, result any) error {
+	return json.Unmarshal([]byte(jsonStr), result)
+}
+
+func WriteJSONFile(filename string, data any) error {
+	dataJSON, err := json.MarshalIndent(data, "", "  ")
+	if err != nil {
+		return err
+	}
+	return os.WriteFile(filename, dataJSON, 0644)
+}
+
+func ReadJSONFile(filename string, result any) error {
+	fileData, err := os.ReadFile(filename)
+	if err != nil {
+		return err
+	}
+	return json.Unmarshal(fileData, result)
+}
+
+func (p Person) toString() string {
+	result := "My name is" + p.Name
+	return result
+}
+
+func main() {
+	person1 := Person{Name: "Suryo", Age: 40, Address: Address{
+		Street: "rappocini",
+		City:   "makassar",
+	}}
+	var person2 Person
+	person2.Name = "Roon"
+	person2.Age = 35
+	person2.Address.Street = "tanjung"
+	person2.Address.City = "makassar"
+	car1 := Car{Brand: "BMW", Model: "X7", Year: 2010}
+
+	jsonStr, err := StructToJSON(person1)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
+	}
+	fmt.Println("Output:\n", jsonStr)
+
+	var newPerson Person
+	err = JSONToStruct(jsonStr, &newPerson)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
+	}
+	fmt.Println("Struct result:\n", newPerson)
+
+	filename := "person.json"
+	err = WriteJSONFile(filename, person2)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
+	}
+	fmt.Println("File JSON:", filename)
+
+	var filePerson Person
+	err = ReadJSONFile(filename, &filePerson)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
+	}
+	fmt.Println("Read from file:\n", filePerson)
+
+	newStr, err := StructToJSON(car1)
+	if err != nil {
+		fmt.Println("Error :", err)
+		return
+	}
+	fmt.Println("Output:\n", newStr)
+
+	fmt.Println(person1.toString())
+}
