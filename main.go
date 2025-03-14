@@ -118,7 +118,7 @@ func PrintCharacter(v Character) {
 	fmt.Println(string(formattedJSON))
 }
 
-func Battle(att *Character, def *Character) {
+func Battle(att Character, def Character) {
 	damage := att.BaseStatus.Attack
 
 	if att.Class == "archer" {
@@ -198,9 +198,9 @@ func main() {
 	PrintCharacter(archer)
 	PrintCharacter(mage)
 
-	Battle(&paladin, &archer)
-	Battle(&archer, &mage)
-	Battle(&mage, &paladin)
+	Battle(paladin, archer)
+	Battle(archer, mage)
+	Battle(mage, paladin)
 
 	PrintCharacter(paladin)
 	PrintCharacter(archer)
