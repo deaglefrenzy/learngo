@@ -138,28 +138,24 @@ func CharFactory() *Character {
 
 func CharSeeder(count int, filename string) error {
 
-	characters := make([]Character, 0, count) // Initialize an empty slice
+	characters := make([]Character, 0, count)
 
-	for i := range count {
-		char := CharFactory() // Use your CharFactory to create random characters
-		if char != nil {
-			characters = append(characters, *char)
-		} else {
-			fmt.Printf("Failed to create character %d.\n", i)
-		}
+	for i := 0; i < count; i++ {
+		char := CharFactory()
+		characters = append(characters, *char)
 	}
 
-	dataJSON, err := json.MarshalIndent(characters, "", "  ") // Marshal the slice
+	dataJSON, err := json.MarshalIndent(characters, "", "  ")
 	if err != nil {
 		return fmt.Errorf("error marshaling JSON: %w", err)
 	}
 
 	filepath := filepath.Join("database", filename)
-	err = os.WriteFile(filepath, dataJSON, 0644) // Write the JSON to the file
+	err = os.WriteFile(filepath, dataJSON, 0644)
 	if err != nil {
 		return fmt.Errorf("error writing JSON to file: %w", err)
 	}
 
-	fmt.Printf("%d characters seeded into %s.\n", len(characters), filename)
+	fmt.Printf("%d characters added into %s.\n", len(characters), filename)
 	return nil
 }

@@ -1,91 +1,92 @@
 [
   {
     "baseStatus": {
-      "Name": "Drev Ith",
-      "Health": 101,
-      "Attack": 11
+      "Name": "Thyr Morv",
+      "Health": 123,
+      "Attack": 13
     },
     "class": "paladin",
-    "shield": 7
+    "shield": 9
   },
   {
     "baseStatus": {
-      "Name": "Faelar Ulf",
-      "Health": 127,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Tael Nyran",
-      "Health": 64,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Sarvan",
-      "Health": 135,
-      "Attack": 18
-    },
-    "class": "paladin"
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Rhaevan",
-      "Health": 128,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Zoren",
-      "Health": 88,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Gryff",
-      "Health": 72,
+      "Name": "Bryn Kaelen",
+      "Health": 115,
       "Attack": 12
     },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Grend Jorev",
-      "Health": 61,
-      "Attack": 6
-    },
     "class": "mage",
-    "mana": 1
+    "mana": 4
   },
   {
     "baseStatus": {
-      "Name": "Ild Morvyn",
-      "Health": 64,
-      "Attack": 15
+      "Name": "Saev Saev",
+      "Health": 149,
+      "Attack": 13
+    },
+    "class": "paladin",
+    "shield": 4
+  },
+  {
+    "baseStatus": {
+      "Name": "Ulf Tael",
+      "Health": 58,
+      "Attack": 6
     },
     "class": "mage",
     "mana": 9
   },
   {
     "baseStatus": {
-      "Name": "Hest Aure",
-      "Health": 121,
-      "Attack": 8
+      "Name": "Orin Cyr",
+      "Health": 80,
+      "Attack": 13
+    },
+    "class": "archer",
+    "critical": 2
+  },
+  {
+    "baseStatus": {
+      "Name": "Varyvan Tael",
+      "Health": 147,
+      "Attack": 16
     },
     "class": "mage",
-    "mana": 17
+    "mana": 3
+  },
+  {
+    "baseStatus": {
+      "Name": "Orin Yvren",
+      "Health": 100,
+      "Attack": 13
+    },
+    "class": "archer",
+    "critical": 13
+  },
+  {
+    "baseStatus": {
+      "Name": "Aethyr Fael",
+      "Health": 67,
+      "Attack": 6
+    },
+    "class": "archer",
+    "critical": 22
+  },
+  {
+    "baseStatus": {
+      "Name": "Aev Wrynn",
+      "Health": 80,
+      "Attack": 9
+    },
+    "class": "mage",
+    "mana": 2
+  },
+  {
+    "baseStatus": {
+      "Name": "Aer Brev",
+      "Health": 105,
+      "Attack": 11
+    },
+    "class": "archer",
+    "critical": 28
   }
 ]
