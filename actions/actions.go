@@ -6,10 +6,6 @@ import (
 	"math/rand"
 )
 
-type CharacterData interface {
-	GetClass() string
-}
-
 func Battle(att *character.Character, def *character.Character) {
 	damage := att.BaseStatus.Attack
 

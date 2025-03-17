@@ -1,7 +1,7 @@
 {
   "baseStatus": {
     "Name": "Rubick",
-    "Health": 58,
+    "Health": 46,
     "Attack": 18
   },
   "class": "mage",

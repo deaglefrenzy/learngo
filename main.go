@@ -11,7 +11,7 @@ import (
 func main() {
 
 	now := carbon.Now()
-	println(now)
+	fmt.Println(now)
 
 	character.NewPaladin("Omni")
 	character.NewArcher("Mirana")
@@ -49,4 +49,8 @@ func main() {
 	character.PrintCharacter(paladin)
 	character.PrintCharacter(archer)
 	character.PrintCharacter(mage)
+
+	NewHero := character.CharFactory()
+	fmt.Println(*NewHero)
+	character.CharSeeder(10, "characters.json")
 }

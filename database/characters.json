@@ -1,0 +1,91 @@
+[
+  {
+    "baseStatus": {
+      "Name": "Drev Ith",
+      "Health": 101,
+      "Attack": 11
+    },
+    "class": "paladin",
+    "shield": 7
+  },
+  {
+    "baseStatus": {
+      "Name": "Faelar Ulf",
+      "Health": 127,
+      "Attack": 19
+    },
+    "class": "archer",
+    "critical": 15
+  },
+  {
+    "baseStatus": {
+      "Name": "Tael Nyran",
+      "Health": 64,
+      "Attack": 15
+    },
+    "class": "paladin",
+    "shield": 8
+  },
+  {
+    "baseStatus": {
+      "Name": "Bel Sarvan",
+      "Health": 135,
+      "Attack": 18
+    },
+    "class": "paladin"
+  },
+  {
+    "baseStatus": {
+      "Name": "Fael Rhaevan",
+      "Health": 128,
+      "Attack": 10
+    },
+    "class": "mage",
+    "mana": 15
+  },
+  {
+    "baseStatus": {
+      "Name": "Riven Zoren",
+      "Health": 88,
+      "Attack": 10
+    },
+    "class": "archer",
+    "critical": 21
+  },
+  {
+    "baseStatus": {
+      "Name": "Avar Gryff",
+      "Health": 72,
+      "Attack": 12
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "baseStatus": {
+      "Name": "Grend Jorev",
+      "Health": 61,
+      "Attack": 6
+    },
+    "class": "mage",
+    "mana": 1
+  },
+  {
+    "baseStatus": {
+      "Name": "Ild Morvyn",
+      "Health": 64,
+      "Attack": 15
+    },
+    "class": "mage",
+    "mana": 9
+  },
+  {
+    "baseStatus": {
+      "Name": "Hest Aure",
+      "Health": 121,
+      "Attack": 8
+    },
+    "class": "mage",
+    "mana": 17
+  }
+]
