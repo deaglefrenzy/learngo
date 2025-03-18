@@ -15,7 +15,7 @@ func NewPaladin(name string) error {
 		Shield: 8,
 	}
 	filename := "char-" + data.GetClass() + ".json"
-	SaveToJSON(filename, data)
+	CharToJSON(filename, data)
 	fmt.Println("New paladin has been created")
 	return nil
 }

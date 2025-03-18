@@ -15,7 +15,7 @@ func NewArcher(name string) error {
 		Critical: 20,
 	}
 	filename := "char-" + data.GetClass() + ".json"
-	SaveToJSON(filename, data)
+	CharToJSON(filename, data)
 	fmt.Println("New archer has been created")
 	return nil
 }

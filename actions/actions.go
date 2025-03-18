@@ -21,7 +21,7 @@ func Battle(att *character.Character, def *character.Character) {
 		att.Mana /= 2
 		fmt.Printf("%s used magic attack! Remaining mana: %d\n", att.BaseStatus.Name, att.Mana)
 
-		character.SaveToJSON("char-mage.json", *att)
+		character.CharToJSON("char-mage.json", *att)
 	}
 
 	if def.Class == "paladin" {
@@ -44,6 +44,6 @@ func Battle(att *character.Character, def *character.Character) {
 	}
 
 	filename := "char-" + def.Class + ".json"
-	character.SaveToJSON(filename, *def)
+	character.CharToJSON(filename, *def)
 
 }

@@ -1,9 +1,11 @@
-{
-  "baseStatus": {
-    "Name": "Omni",
-    "Health": 102,
-    "Attack": 15
-  },
-  "class": "paladin",
-  "shield": 7
-}
+[
+  {
+    "baseStatus": {
+      "Name": "Omni",
+      "Health": 120,
+      "Attack": 15
+    },
+    "class": "paladin",
+    "shield": 8
+  }
+]

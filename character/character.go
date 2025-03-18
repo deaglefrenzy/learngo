@@ -1,11 +1,14 @@
 package character
 
 import (
+	"encoding/csv"
 	"encoding/json"
 	"fmt"
 	"math/rand"
 	"os"
 	"path/filepath"
+
+	"github.com/golang-module/carbon"
 )
 
 type BaseStatus struct {
@@ -59,7 +62,7 @@ func PrintCharacter(v Character) {
 	fmt.Println(string(formattedJSON))
 }
 
-func SaveToJSON(filename string, data Character) error {
+func CharToJSON(filename string, data Character) error {
 	dataJSON, err := json.MarshalIndent(data, "", "  ")
 	if err != nil {
 		return fmt.Errorf("error marshaling JSON: %w", err)
@@ -94,11 +97,11 @@ func CharFactory() *Character {
 		"Varyvan", "Wryvan", "Xyryvan", "Yvryvan", "Zylvan",
 	}
 
-	index1 := rand.Intn(len(names))
-	index2 := rand.Intn(len(names))
-	name := names[index1] + " " + names[index2]
-	health := rand.Intn(100) + 50 // Health between 50 and 150
-	attack := rand.Intn(15) + 5   // Attack between 5 and 20
+	random1 := rand.Intn(len(names))
+	random2 := rand.Intn(len(names))
+	name := names[random1] + " " + names[random2]
+	health := rand.Intn(100) + 60
+	attack := rand.Intn(15) + 5
 
 	switch randomClass {
 	case "paladin":
@@ -109,7 +112,7 @@ func CharFactory() *Character {
 				Attack: attack,
 			},
 			Class:  "paladin",
-			Shield: rand.Intn(10), // Shield between 0 and 9
+			Shield: rand.Intn(10) + 2,
 		}
 	case "archer":
 		return &Character{
@@ -119,7 +122,7 @@ func CharFactory() *Character {
 				Attack: attack,
 			},
 			Class:    "archer",
-			Critical: rand.Intn(30), // Crit between 0 and 29
+			Critical: rand.Intn(15) + 5,
 		}
 	case "mage":
 		return &Character{
@@ -129,7 +132,7 @@ func CharFactory() *Character {
 				Attack: attack,
 			},
 			Class: "mage",
-			Mana:  rand.Intn(20), // Mana between 0 and 19
+			Mana:  rand.Intn(20) + 10,
 		}
 	default:
 		return nil
@@ -157,5 +160,60 @@ func CharSeeder(count int, filename string) error {
 	}
 
 	fmt.Printf("%d characters added into %s.\n", len(characters), filename)
+	return nil
+}
+
+func LoadArrayChar(filename string) ([]Character, error) {
+	filepath := filepath.Join("database", filename)
+	fileData, err := os.ReadFile(filepath)
+	if err != nil {
+		return nil, fmt.Errorf("error loading JSON file: %w", err)
+	}
+
+	var characters []Character
+	err = json.Unmarshal(fileData, &characters)
+	if err != nil {
+		return nil, fmt.Errorf("error unmarshaling JSON data: %w", err)
+	}
+
+	return characters, nil
+}
+
+func ArrayCharToCSV(characters []Character, filename string) error {
+	filepath := filepath.Join("database", filename)
+	file, err := os.Create(filepath)
+	if err != nil {
+		return fmt.Errorf("error creating CSV file: %w", err)
+	}
+	defer file.Close()
+
+	writer := csv.NewWriter(file)
+	defer writer.Flush()
+
+	header := []string{"id", "char_name", "char_class", "health", "attack", "created_at_date", "created_at_time"}
+	if err := writer.Write(header); err != nil {
+		return fmt.Errorf("error writing CSV header: %w", err)
+	}
+
+	for i, character := range characters {
+		now := carbon.Now()
+		dateStr := now.ToDateString()
+		timeStr := now.ToTimeString()
+		row := []string{
+			fmt.Sprintf("%d", i+1),
+			character.BaseStatus.Name,
+			character.Class,
+			fmt.Sprintf("%d", character.BaseStatus.Health),
+			fmt.Sprintf("%d", character.BaseStatus.Attack),
+			dateStr,
+			timeStr,
+		}
+
+		if err := writer.Write(row); err != nil {
+			return fmt.Errorf("error writing character data: %w", err)
+		}
+	}
+
+	fmt.Printf("%d characters written into %s.\n", len(characters), filename)
 	return nil
 }

@@ -15,7 +15,7 @@ func NewMage(name string) error {
 		Mana:  16,
 	}
 	filename := "char-" + data.GetClass() + ".json"
-	SaveToJSON(filename, data)
+	CharToJSON(filename, data)
 	fmt.Println("New mage has been created")
 	return nil
 }

@@ -1,0 +1,11 @@
+id,char_name,char_class,health,attack,created_at_date,created_at_time
+1,Xyryvan Nym,archer,68,13,2025-03-18,11:30:53
+2,Gryth Hald,mage,53,12,2025-03-18,11:30:53
+3,Nym Syl,mage,50,7,2025-03-18,11:30:53
+4,Fael Xanth,archer,57,16,2025-03-18,11:30:53
+5,Vor Thyran,mage,141,9,2025-03-18,11:30:53
+6,Wrynn Wryn,archer,62,15,2025-03-18,11:30:53
+7,Morv Ild,mage,145,18,2025-03-18,11:30:53
+8,Thal Rhaevan,archer,61,5,2025-03-18,11:30:53
+9,Crys Pryth,archer,89,7,2025-03-18,11:30:53
+10,Ith Xyron,mage,91,19,2025-03-18,11:30:53
