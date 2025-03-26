@@ -1,9002 +1,1012 @@
 [
   {
+    "id": 1,
     "baseStatus": {
-      "Name": "Pryvan Xyron",
-      "Health": 90,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Nyx",
-      "Health": 123,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Nyx",
-      "Health": 144,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Yvaine",
-      "Health": 75,
-      "Attack": 17
+      "name": "Cael Thal",
+      "health": 150,
+      "attack": 16
     },
     "class": "mage",
-    "mana": 28
+    "mana": 17
   },
   {
+    "id": 2,
     "baseStatus": {
-      "Name": "Syr Lyrian",
-      "Health": 146,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyr Cael",
-      "Health": 137,
-      "Attack": 14
+      "name": "Jarr Syr",
+      "health": 90,
+      "attack": 8
     },
     "class": "mage",
-    "mana": 19
+    "mana": 10
   },
   {
+    "id": 3,
     "baseStatus": {
-      "Name": "Crys Jorv",
-      "Health": 88,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Ymir",
-      "Health": 157,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Izaryn",
-      "Health": 140,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Lyth",
-      "Health": 78,
-      "Attack": 11
+      "name": "Aethyr Onyx",
+      "health": 80,
+      "attack": 15
     },
     "class": "paladin",
     "shield": 2
   },
   {
+    "id": 4,
     "baseStatus": {
-      "Name": "Pryvan Ebon",
-      "Health": 74,
-      "Attack": 12
+      "name": "Aure Faelar",
+      "health": 130,
+      "attack": 12
     },
     "class": "paladin",
-    "shield": 4
+    "shield": 7
   },
   {
+    "id": 5,
     "baseStatus": {
-      "Name": "Faelar Izar",
-      "Health": 88,
-      "Attack": 13
+      "name": "Faelar Thal",
+      "health": 100,
+      "attack": 9
+    },
+    "class": "archer",
+    "critical": 16
+  },
+  {
+    "id": 6,
+    "baseStatus": {
+      "name": "Ith Morv",
+      "health": 90,
+      "attack": 5
     },
     "class": "mage",
-    "mana": 15
+    "mana": 14
   },
   {
+    "id": 7,
     "baseStatus": {
-      "Name": "Aev Jor",
-      "Health": 120,
-      "Attack": 5
+      "name": "Gryth Morwyn",
+      "health": 130,
+      "attack": 14
+    },
+    "class": "mage",
+    "mana": 16
+  },
+  {
+    "id": 8,
+    "baseStatus": {
+      "name": "Syr Jorv",
+      "health": 110,
+      "attack": 16
+    },
+    "class": "mage",
+    "mana": 19
+  },
+  {
+    "id": 9,
+    "baseStatus": {
+      "name": "Syl Drevyn",
+      "health": 80,
+      "attack": 9
+    },
+    "class": "mage",
+    "mana": 11
+  },
+  {
+    "id": 10,
+    "baseStatus": {
+      "name": "Grend Bel",
+      "health": 80,
+      "attack": 8
+    },
+    "class": "archer",
+    "critical": 8
+  },
+  {
+    "id": 11,
+    "baseStatus": {
+      "name": "Fael Wrynn",
+      "health": 110,
+      "attack": 13
+    },
+    "class": "archer",
+    "critical": 7
+  },
+  {
+    "id": 12,
+    "baseStatus": {
+      "name": "Morvyn Ryl",
+      "health": 130,
+      "attack": 14
+    },
+    "class": "archer",
+    "critical": 18
+  },
+  {
+    "id": 13,
+    "baseStatus": {
+      "name": "Kaelen Ryl",
+      "health": 120,
+      "attack": 18
     },
     "class": "paladin",
-    "shield": 8
+    "shield": 6
   },
   {
+    "id": 14,
     "baseStatus": {
-      "Name": "Zoren Thyr",
-      "Health": 113,
-      "Attack": 10
+      "name": "Syl Syl",
+      "health": 100,
+      "attack": 6
     },
-    "class": "mage",
-    "mana": 12
+    "class": "paladin",
+    "shield": 10
   },
   {
+    "id": 15,
     "baseStatus": {
-      "Name": "Onyx Aeth",
-      "Health": 133,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Zyl",
-      "Health": 82,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Kaelen Faelar",
-      "Health": 88,
-      "Attack": 9
+      "name": "Yvryvan Xyron",
+      "health": 110,
+      "attack": 16
     },
     "class": "paladin",
     "shield": 9
   },
   {
+    "id": 16,
     "baseStatus": {
-      "Name": "Dorn Thal",
-      "Health": 117,
-      "Attack": 13
+      "name": "Tyr Nyran",
+      "health": 80,
+      "attack": 9
+    },
+    "class": "mage",
+    "mana": 16
+  },
+  {
+    "id": 17,
+    "baseStatus": {
+      "name": "Arc Syl",
+      "health": 130,
+      "attack": 10
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "id": 18,
+    "baseStatus": {
+      "name": "Saev Rhaevan",
+      "health": 130,
+      "attack": 17
+    },
+    "class": "mage",
+    "mana": 18
+  },
+  {
+    "id": 19,
+    "baseStatus": {
+      "name": "Aeth Avar",
+      "health": 80,
+      "attack": 10
+    },
+    "class": "mage",
+    "mana": 10
+  },
+  {
+    "id": 20,
+    "baseStatus": {
+      "name": "Drak Xyryvan",
+      "health": 60,
+      "attack": 13
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "id": 21,
+    "baseStatus": {
+      "name": "Fyr Aev",
+      "health": 140,
+      "attack": 17
+    },
+    "class": "mage",
+    "mana": 13
+  },
+  {
+    "id": 22,
+    "baseStatus": {
+      "name": "Dorn Gyr",
+      "health": 150,
+      "attack": 12
+    },
+    "class": "archer",
+    "critical": 11
+  },
+  {
+    "id": 23,
+    "baseStatus": {
+      "name": "Zel Wryvan",
+      "health": 100,
+      "attack": 17
     },
     "class": "mage",
     "mana": 26
   },
   {
+    "id": 24,
     "baseStatus": {
-      "Name": "Valen Jarr",
-      "Health": 112,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Onyx",
-      "Health": 134,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Bael",
-      "Health": 132,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Xyl",
-      "Health": 71,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Crys",
-      "Health": 136,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Wryn",
-      "Health": 142,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Wryn",
-      "Health": 71,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Ebon",
-      "Health": 122,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Wrynn",
-      "Health": 124,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Bel",
-      "Health": 117,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Aeth",
-      "Health": 150,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Ryl",
-      "Health": 131,
-      "Attack": 10
+      "name": "Fyr Brym",
+      "health": 60,
+      "attack": 7
     },
     "class": "archer",
     "critical": 11
   },
   {
+    "id": 25,
     "baseStatus": {
-      "Name": "Thyr Pryth",
-      "Health": 64,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Drak",
-      "Health": 102,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Riven",
-      "Health": 90,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Wrynn",
-      "Health": 158,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Bryn",
-      "Health": 79,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Xyron",
-      "Health": 62,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Fyr",
-      "Health": 123,
-      "Attack": 7
+      "name": "Cael Myr",
+      "health": 90,
+      "attack": 11
     },
     "class": "archer",
     "critical": 14
   },
   {
+    "id": 26,
     "baseStatus": {
-      "Name": "Vex Nyx",
-      "Health": 119,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Lyrian",
-      "Health": 117,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Morv",
-      "Health": 63,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Wyn",
-      "Health": 64,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Orin",
-      "Health": 77,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Nyran",
-      "Health": 96,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Hest",
-      "Health": 70,
-      "Attack": 10
+      "name": "Phos Izar",
+      "health": 80,
+      "attack": 13
     },
     "class": "archer",
-    "critical": 7
+    "critical": 14
   },
   {
+    "id": 27,
     "baseStatus": {
-      "Name": "Cyril Krynn",
-      "Health": 117,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Zalt",
-      "Health": 85,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Xanth",
-      "Health": 89,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Nym",
-      "Health": 102,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Thyr",
-      "Health": 137,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Aure",
-      "Health": 70,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Xyryvan",
-      "Health": 92,
-      "Attack": 14
+      "name": "Valen Vex",
+      "health": 100,
+      "attack": 6
     },
     "class": "mage",
-    "mana": 23
+    "mana": 15
   },
   {
+    "id": 28,
     "baseStatus": {
-      "Name": "Valen Yvren",
-      "Health": 71,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Lyrian",
-      "Health": 146,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Zyl",
-      "Health": 107,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Wyrn",
-      "Health": 147,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Kael",
-      "Health": 157,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Sarvan",
-      "Health": 158,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Izaryn",
-      "Health": 106,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Rhaed",
-      "Health": 99,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Falen",
-      "Health": 146,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Alar",
-      "Health": 77,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Eryn",
-      "Health": 128,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Tyr",
-      "Health": 120,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Jarr",
-      "Health": 99,
-      "Attack": 17
+      "name": "Pryth Jareth",
+      "health": 110,
+      "attack": 18
     },
     "class": "mage",
     "mana": 16
   },
   {
+    "id": 29,
     "baseStatus": {
-      "Name": "Kael Zyl",
-      "Health": 151,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Hael",
-      "Health": 126,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyran Cael",
-      "Health": 138,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Hyran",
-      "Health": 100,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Rhaevan",
-      "Health": 135,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Wyrn",
-      "Health": 101,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Niv",
-      "Health": 126,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Yvaine",
-      "Health": 130,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Mav",
-      "Health": 140,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Xylo",
-      "Health": 72,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Dael Arc",
-      "Health": 89,
-      "Attack": 13
+      "name": "Brym Xylo",
+      "health": 120,
+      "attack": 19
     },
     "class": "mage",
     "mana": 20
   },
   {
-    "baseStatus": {
-      "Name": "Arc Jareth",
-      "Health": 138,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Falen",
-      "Health": 62,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Kael Phos",
-      "Health": 150,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Avar",
-      "Health": 147,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Tael",
-      "Health": 144,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Syl",
-      "Health": 74,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Rhaed",
-      "Health": 78,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvren Pryth",
-      "Health": 118,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Avar",
-      "Health": 71,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Ymir",
-      "Health": 123,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Jorev",
-      "Health": 95,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Alar Ith",
-      "Health": 103,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Wryvan",
-      "Health": 113,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Mav",
-      "Health": 67,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Cyr",
-      "Health": 77,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Jarr",
-      "Health": 87,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Crys",
-      "Health": 93,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Fael",
-      "Health": 123,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Varyn",
-      "Health": 151,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Rhaev",
-      "Health": 133,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Onyx",
-      "Health": 95,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Syl",
-      "Health": 98,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Crys",
-      "Health": 114,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Nym",
-      "Health": 137,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Faelar",
-      "Health": 100,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Lorn",
-      "Health": 94,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Varyn",
-      "Health": 82,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Verid",
-      "Health": 141,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyran Taryn",
-      "Health": 68,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Jorev",
-      "Health": 156,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Saev",
-      "Health": 111,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Vex",
-      "Health": 131,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Ryl",
-      "Health": 98,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Zel",
-      "Health": 146,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Lor Ild",
-      "Health": 126,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Pryth",
-      "Health": 99,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Ymir",
-      "Health": 101,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Sarvan",
-      "Health": 90,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Gryth",
-      "Health": 143,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Prax Grend",
-      "Health": 132,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Morvyn",
-      "Health": 71,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Thal Kryvan",
-      "Health": 108,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Zoren",
-      "Health": 104,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Nyx",
-      "Health": 131,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Rhaed",
-      "Health": 64,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Rhaev",
-      "Health": 147,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Aethyr",
-      "Health": 81,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Falen",
-      "Health": 156,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Brym",
-      "Health": 115,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Phos",
-      "Health": 97,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Jareth",
-      "Health": 144,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Jarr",
-      "Health": 139,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Onyx",
-      "Health": 151,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Thyran",
-      "Health": 125,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Brym",
-      "Health": 75,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Jareth",
-      "Health": 119,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Zalt",
-      "Health": 116,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Orin",
-      "Health": 64,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Cyr",
-      "Health": 79,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Izaryn",
-      "Health": 134,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Umbr",
-      "Health": 80,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Hald",
-      "Health": 70,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Corv",
-      "Health": 108,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Lyrevan",
-      "Health": 61,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Evar",
-      "Health": 66,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Ivor",
-      "Health": 139,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Vor",
-      "Health": 91,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Prax Bel",
-      "Health": 131,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Kryll",
-      "Health": 159,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Xyron",
-      "Health": 144,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Pryvan",
-      "Health": 90,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Aure",
-      "Health": 118,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Brev",
-      "Health": 122,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Drev",
-      "Health": 121,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Brym",
-      "Health": 80,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Tael Lorn",
-      "Health": 140,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Dorn",
-      "Health": 156,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Thal",
-      "Health": 85,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Gryff",
-      "Health": 61,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyr Rhaev",
-      "Health": 121,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Morwyn",
-      "Health": 139,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Myr",
-      "Health": 139,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvren Mav",
-      "Health": 146,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Ild",
-      "Health": 146,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Eld",
-      "Health": 157,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Kryll",
-      "Health": 71,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Ulf",
-      "Health": 89,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Rhaevan",
-      "Health": 105,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Kryll",
-      "Health": 86,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Xanth",
-      "Health": 156,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyryvan Othyr",
-      "Health": 98,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Taryn",
-      "Health": 104,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Hyran",
-      "Health": 125,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Hest",
-      "Health": 137,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Lyrian",
-      "Health": 74,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Faelar",
-      "Health": 98,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Lyrevan",
-      "Health": 120,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Aethyr",
-      "Health": 79,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Hyran",
-      "Health": 151,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Umbr",
-      "Health": 66,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Eryvan",
-      "Health": 112,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Wyrn",
-      "Health": 156,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Fyr",
-      "Health": 147,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Eryvan",
-      "Health": 143,
-      "Attack": 19
+    "id": 30,
+    "baseStatus": {
+      "name": "Hest Myr",
+      "health": 60,
+      "attack": 9
     },
     "class": "archer",
     "critical": 11
   },
   {
+    "id": 31,
     "baseStatus": {
-      "Name": "Bael Wyrn",
-      "Health": 85,
-      "Attack": 9
+      "name": "Cael Jor",
+      "health": 90,
+      "attack": 13
+    },
+    "class": "archer",
+    "critical": 15
+  },
+  {
+    "id": 32,
+    "baseStatus": {
+      "name": "Dorn Oryn",
+      "health": 60,
+      "attack": 9
+    },
+    "class": "paladin",
+    "shield": 4
+  },
+  {
+    "id": 33,
+    "baseStatus": {
+      "name": "Kaelen Kryll",
+      "health": 80,
+      "attack": 17
+    },
+    "class": "paladin",
+    "shield": 7
+  },
+  {
+    "id": 34,
+    "baseStatus": {
+      "name": "Izaryn Morv",
+      "health": 90,
+      "attack": 8
+    },
+    "class": "archer",
+    "critical": 16
+  },
+  {
+    "id": 35,
+    "baseStatus": {
+      "name": "Fyr Jorev",
+      "health": 150,
+      "attack": 17
+    },
+    "class": "mage",
+    "mana": 11
+  },
+  {
+    "id": 36,
+    "baseStatus": {
+      "name": "Nyran Rhaev",
+      "health": 130,
+      "attack": 5
+    },
+    "class": "paladin",
+    "shield": 9
+  },
+  {
+    "id": 37,
+    "baseStatus": {
+      "name": "Jorv Othyr",
+      "health": 130,
+      "attack": 16
+    },
+    "class": "paladin",
+    "shield": 8
+  },
+  {
+    "id": 38,
+    "baseStatus": {
+      "name": "Izar Rhaev",
+      "health": 130,
+      "attack": 19
+    },
+    "class": "mage",
+    "mana": 17
+  },
+  {
+    "id": 39,
+    "baseStatus": {
+      "name": "Syr Phos",
+      "health": 140,
+      "attack": 16
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "id": 40,
+    "baseStatus": {
+      "name": "Morv Sarvan",
+      "health": 140,
+      "attack": 19
+    },
+    "class": "mage",
+    "mana": 25
+  },
+  {
+    "id": 41,
+    "baseStatus": {
+      "name": "Crys Quil",
+      "health": 80,
+      "attack": 17
+    },
+    "class": "mage",
+    "mana": 27
+  },
+  {
+    "id": 42,
+    "baseStatus": {
+      "name": "Izaryn Fael",
+      "health": 140,
+      "attack": 5
+    },
+    "class": "mage",
+    "mana": 27
+  },
+  {
+    "id": 43,
+    "baseStatus": {
+      "name": "Eryvan Aer",
+      "health": 90,
+      "attack": 16
+    },
+    "class": "archer",
+    "critical": 5
+  },
+  {
+    "id": 44,
+    "baseStatus": {
+      "name": "Jorev Gryth",
+      "health": 70,
+      "attack": 10
+    },
+    "class": "archer",
+    "critical": 13
+  },
+  {
+    "id": 45,
+    "baseStatus": {
+      "name": "Niv Lyth",
+      "health": 130,
+      "attack": 11
+    },
+    "class": "archer",
+    "critical": 15
+  },
+  {
+    "id": 46,
+    "baseStatus": {
+      "name": "Orin Ild",
+      "health": 110,
+      "attack": 17
+    },
+    "class": "paladin",
+    "shield": 8
+  },
+  {
+    "id": 47,
+    "baseStatus": {
+      "name": "Ulf Wyrn",
+      "health": 130,
+      "attack": 12
+    },
+    "class": "archer",
+    "critical": 9
+  },
+  {
+    "id": 48,
+    "baseStatus": {
+      "name": "Xyron Umbr",
+      "health": 120,
+      "attack": 9
+    },
+    "class": "archer",
+    "critical": 13
+  },
+  {
+    "id": 49,
+    "baseStatus": {
+      "name": "Faelar Thal",
+      "health": 60,
+      "attack": 6
+    },
+    "class": "mage",
+    "mana": 21
+  },
+  {
+    "id": 50,
+    "baseStatus": {
+      "name": "Zoren Fael",
+      "health": 70,
+      "attack": 7
+    },
+    "class": "paladin",
+    "shield": 4
+  },
+  {
+    "id": 51,
+    "baseStatus": {
+      "name": "Gyr Syr",
+      "health": 140,
+      "attack": 10
+    },
+    "class": "archer",
+    "critical": 9
+  },
+  {
+    "id": 52,
+    "baseStatus": {
+      "name": "Eryvan Brym",
+      "health": 150,
+      "attack": 17
+    },
+    "class": "archer",
+    "critical": 6
+  },
+  {
+    "id": 53,
+    "baseStatus": {
+      "name": "Hael Gryth",
+      "health": 110,
+      "attack": 12
+    },
+    "class": "archer",
+    "critical": 6
+  },
+  {
+    "id": 54,
+    "baseStatus": {
+      "name": "Othyr Eryvan",
+      "health": 80,
+      "attack": 7
+    },
+    "class": "archer",
+    "critical": 11
+  },
+  {
+    "id": 55,
+    "baseStatus": {
+      "name": "Ryl Nyr",
+      "health": 80,
+      "attack": 17
+    },
+    "class": "paladin",
+    "shield": 9
+  },
+  {
+    "id": 56,
+    "baseStatus": {
+      "name": "Umbr Corv",
+      "health": 70,
+      "attack": 19
+    },
+    "class": "archer",
+    "critical": 11
+  },
+  {
+    "id": 57,
+    "baseStatus": {
+      "name": "Evar Zoren",
+      "health": 100,
+      "attack": 8
+    },
+    "class": "mage",
+    "mana": 28
+  },
+  {
+    "id": 58,
+    "baseStatus": {
+      "name": "Ivor Wryn",
+      "health": 140,
+      "attack": 18
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "id": 59,
+    "baseStatus": {
+      "name": "Eryvan Eryn",
+      "health": 120,
+      "attack": 16
+    },
+    "class": "paladin",
+    "shield": 4
+  },
+  {
+    "id": 60,
+    "baseStatus": {
+      "name": "Syl Umbr",
+      "health": 130,
+      "attack": 7
+    },
+    "class": "mage",
+    "mana": 27
+  },
+  {
+    "id": 61,
+    "baseStatus": {
+      "name": "Kaelen Lyth",
+      "health": 100,
+      "attack": 9
     },
     "class": "mage",
     "mana": 16
   },
   {
+    "id": 62,
     "baseStatus": {
-      "Name": "Nyr Zoren",
-      "Health": 157,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Jorv",
-      "Health": 159,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Morvyn",
-      "Health": 68,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Lyrevan",
-      "Health": 130,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Hest Nym",
-      "Health": 128,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Nym",
-      "Health": 87,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyryvan Ryl",
-      "Health": 112,
-      "Attack": 11
+      "name": "Xanth Eryvan",
+      "health": 110,
+      "attack": 7
     },
     "class": "paladin",
     "shield": 2
   },
   {
+    "id": 63,
     "baseStatus": {
-      "Name": "Aeth Aer",
-      "Health": 140,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Othyr",
-      "Health": 113,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Morwyn",
-      "Health": 74,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaed Morvyn",
-      "Health": 60,
-      "Attack": 11
+      "name": "Faelar Nym",
+      "health": 60,
+      "attack": 17
     },
     "class": "paladin",
     "shield": 7
   },
   {
+    "id": 64,
     "baseStatus": {
-      "Name": "Izar Zylvan",
-      "Health": 123,
-      "Attack": 15
+      "name": "Rhaev Lorn",
+      "health": 140,
+      "attack": 10
+    },
+    "class": "archer",
+    "critical": 15
+  },
+  {
+    "id": 65,
+    "baseStatus": {
+      "name": "Xanth Yvryvan",
+      "health": 140,
+      "attack": 5
     },
     "class": "paladin",
     "shield": 11
   },
   {
+    "id": 66,
     "baseStatus": {
-      "Name": "Saev Dael",
-      "Health": 71,
-      "Attack": 14
+      "name": "Aeth Fyr",
+      "health": 150,
+      "attack": 14
     },
     "class": "paladin",
     "shield": 2
   },
   {
+    "id": 67,
     "baseStatus": {
-      "Name": "Grend Dorn",
-      "Health": 147,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Yvaine",
-      "Health": 79,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Brev",
-      "Health": 98,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Oryn",
-      "Health": 69,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Pryvan",
-      "Health": 151,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Varyvan",
-      "Health": 66,
-      "Attack": 15
+      "name": "Cyr Dorn",
+      "health": 140,
+      "attack": 17
     },
     "class": "archer",
-    "critical": 10
+    "critical": 16
   },
   {
+    "id": 68,
     "baseStatus": {
-      "Name": "Kryvan Rhaevan",
-      "Health": 150,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Izar",
-      "Health": 137,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Hald",
-      "Health": 74,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Aev",
-      "Health": 112,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Izar Yvryvan",
-      "Health": 97,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Syr",
-      "Health": 111,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Nym",
-      "Health": 69,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Alar",
-      "Health": 93,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Myr",
-      "Health": 109,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Xyron",
-      "Health": 126,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Arc",
-      "Health": 89,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Xyl",
-      "Health": 146,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrian Xyl",
-      "Health": 63,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Aev",
-      "Health": 156,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Jarr",
-      "Health": 156,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Zylvan",
-      "Health": 114,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Jor",
-      "Health": 85,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Hald",
-      "Health": 111,
-      "Attack": 5
+      "name": "Lyrevan Crys",
+      "health": 120,
+      "attack": 12
     },
     "class": "mage",
     "mana": 21
   },
   {
+    "id": 69,
     "baseStatus": {
-      "Name": "Wryn Crys",
-      "Health": 119,
-      "Attack": 11
+      "name": "Jareth Xanth",
+      "health": 90,
+      "attack": 15
+    },
+    "class": "paladin",
+    "shield": 4
+  },
+  {
+    "id": 70,
+    "baseStatus": {
+      "name": "Arc Wyrn",
+      "health": 130,
+      "attack": 12
+    },
+    "class": "archer",
+    "critical": 14
+  },
+  {
+    "id": 71,
+    "baseStatus": {
+      "name": "Yvryvan Rhaev",
+      "health": 150,
+      "attack": 6
+    },
+    "class": "archer",
+    "critical": 18
+  },
+  {
+    "id": 72,
+    "baseStatus": {
+      "name": "Myr Zoren",
+      "health": 70,
+      "attack": 12
+    },
+    "class": "archer",
+    "critical": 16
+  },
+  {
+    "id": 73,
+    "baseStatus": {
+      "name": "Thyran Xylo",
+      "health": 140,
+      "attack": 13
+    },
+    "class": "paladin",
+    "shield": 8
+  },
+  {
+    "id": 74,
+    "baseStatus": {
+      "name": "Ryl Eryvan",
+      "health": 140,
+      "attack": 8
+    },
+    "class": "archer",
+    "critical": 7
+  },
+  {
+    "id": 75,
+    "baseStatus": {
+      "name": "Jor Oryn",
+      "health": 90,
+      "attack": 19
     },
     "class": "paladin",
     "shield": 7
   },
   {
+    "id": 76,
     "baseStatus": {
-      "Name": "Yvaine Hyld",
-      "Health": 83,
-      "Attack": 19
+      "name": "Syr Tyr",
+      "health": 90,
+      "attack": 6
     },
-    "class": "mage",
-    "mana": 29
+    "class": "paladin",
+    "shield": 8
   },
   {
+    "id": 77,
     "baseStatus": {
-      "Name": "Prax Faelyn",
-      "Health": 110,
-      "Attack": 12
+      "name": "Suryo",
+      "health": 80,
+      "attack": 10
+    },
+    "class": "archer",
+    "critical": 15
+  },
+  {
+    "id": 79,
+    "baseStatus": {
+      "name": "Morv Morwyn",
+      "health": 120,
+      "attack": 15
+    },
+    "class": "archer",
+    "critical": 16
+  },
+  {
+    "id": 80,
+    "baseStatus": {
+      "name": "Bael Xylo",
+      "health": 120,
+      "attack": 11
     },
     "class": "archer",
     "critical": 12
   },
   {
+    "id": 81,
     "baseStatus": {
-      "Name": "Jareth Nyran",
-      "Health": 148,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Lor",
-      "Health": 100,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Othyr",
-      "Health": 62,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Kaelen Wrynn",
-      "Health": 67,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Bryn",
-      "Health": 111,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Ymir",
-      "Health": 114,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Krynn",
-      "Health": 125,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Aev Drevyn",
-      "Health": 158,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Orin Bryn",
-      "Health": 65,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Hyran",
-      "Health": 133,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Ith",
-      "Health": 91,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Grend",
-      "Health": 110,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Tyr Cyril",
-      "Health": 111,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Arc",
-      "Health": 132,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyr Riven",
-      "Health": 77,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Zylvan",
-      "Health": 136,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Thal",
-      "Health": 143,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Pryth",
-      "Health": 74,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Ymir",
-      "Health": 155,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Gryth",
-      "Health": 119,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Nym",
-      "Health": 144,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyryvan Phos",
-      "Health": 64,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Grend",
-      "Health": 99,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Quil Umbr",
-      "Health": 110,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Tyr Ulf",
-      "Health": 97,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Cyril",
-      "Health": 81,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Krynn",
-      "Health": 141,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Hael",
-      "Health": 63,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Aev",
-      "Health": 108,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Taryn",
-      "Health": 133,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Hest",
-      "Health": 86,
-      "Attack": 10
+      "name": "Wyn Thyran",
+      "health": 120,
+      "attack": 11
     },
     "class": "paladin",
     "shield": 6
   },
   {
+    "id": 82,
     "baseStatus": {
-      "Name": "Vor Dorn",
-      "Health": 137,
-      "Attack": 16
+      "name": "Riven Pryth",
+      "health": 130,
+      "attack": 16
     },
     "class": "paladin",
-    "shield": 2
+    "shield": 10
   },
   {
+    "id": 83,
     "baseStatus": {
-      "Name": "Niv Bryn",
-      "Health": 149,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Eryn",
-      "Health": 143,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyril Fael",
-      "Health": 101,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Brym",
-      "Health": 114,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Ulf",
-      "Health": 109,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Sarv",
-      "Health": 100,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Othyran",
-      "Health": 131,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Ryl",
-      "Health": 78,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Aer",
-      "Health": 102,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyryvan Hael",
-      "Health": 85,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Kael",
-      "Health": 94,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Niv",
-      "Health": 147,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Avar",
-      "Health": 96,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Syl",
-      "Health": 135,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Drev",
-      "Health": 144,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Orin",
-      "Health": 139,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Sarv",
-      "Health": 74,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Lor",
-      "Health": 104,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Tyr",
-      "Health": 151,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Lyth",
-      "Health": 111,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Kryvan",
-      "Health": 69,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Hael",
-      "Health": 133,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Dael",
-      "Health": 127,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Zel",
-      "Health": 141,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Bryn",
-      "Health": 129,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Fyr",
-      "Health": 143,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Brym",
-      "Health": 123,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Gyr",
-      "Health": 95,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Zoren",
-      "Health": 129,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Nyran",
-      "Health": 112,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Zalt",
-      "Health": 100,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Fael",
-      "Health": 139,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Pyr",
-      "Health": 61,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Fael",
-      "Health": 126,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Kael",
-      "Health": 84,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Sarv",
-      "Health": 105,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Faelyn",
-      "Health": 104,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Jorv",
-      "Health": 101,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Riven",
-      "Health": 130,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Jarr",
-      "Health": 135,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Kaelen",
-      "Health": 146,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Fyr",
-      "Health": 159,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Fael",
-      "Health": 123,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Avar",
-      "Health": 120,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Orin",
-      "Health": 80,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Gyr",
-      "Health": 75,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Drevyn",
-      "Health": 134,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Ild",
-      "Health": 147,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Wyn",
-      "Health": 110,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvren Pryvan",
-      "Health": 81,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Sarvan",
-      "Health": 60,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Zylvan",
-      "Health": 63,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Umbr",
-      "Health": 98,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Faelar",
-      "Health": 113,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Ild",
-      "Health": 74,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Dael Wrynn",
-      "Health": 84,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Jarr",
-      "Health": 84,
-      "Attack": 6
+      "name": "Hael Gryth",
+      "health": 130,
+      "attack": 8
     },
     "class": "mage",
     "mana": 25
   },
   {
+    "id": 84,
     "baseStatus": {
-      "Name": "Izar Oryn",
-      "Health": 99,
-      "Attack": 5
+      "name": "Rhaev Thyr",
+      "health": 130,
+      "attack": 13
     },
-    "class": "mage",
-    "mana": 15
+    "class": "paladin",
+    "shield": 7
   },
   {
+    "id": 85,
     "baseStatus": {
-      "Name": "Verid Umbr",
-      "Health": 73,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Brym",
-      "Health": 110,
-      "Attack": 6
+      "name": "Kryll Yvaine",
+      "health": 140,
+      "attack": 17
     },
     "class": "archer",
-    "critical": 6
+    "critical": 19
   },
   {
+    "id": 86,
     "baseStatus": {
-      "Name": "Nym Aure",
-      "Health": 98,
-      "Attack": 10
+      "name": "Sarvan Gryth",
+      "health": 90,
+      "attack": 7
     },
-    "class": "mage",
-    "mana": 20
+    "class": "paladin",
+    "shield": 9
   },
   {
+    "id": 87,
     "baseStatus": {
-      "Name": "Rhaed Xyl",
-      "Health": 84,
-      "Attack": 16
+      "name": "Hyld Yvryvan",
+      "health": 60,
+      "attack": 13
+    },
+    "class": "paladin",
+    "shield": 3
+  },
+  {
+    "id": 88,
+    "baseStatus": {
+      "name": "Krynn Syl",
+      "health": 140,
+      "attack": 16
+    },
+    "class": "paladin",
+    "shield": 7
+  },
+  {
+    "id": 89,
+    "baseStatus": {
+      "name": "Othyr Aer",
+      "health": 70,
+      "attack": 7
     },
     "class": "mage",
     "mana": 14
   },
   {
+    "id": 90,
     "baseStatus": {
-      "Name": "Varyn Nym",
-      "Health": 64,
-      "Attack": 11
+      "name": "Zyl Hyld",
+      "health": 140,
+      "attack": 7
     },
-    "class": "paladin",
-    "shield": 11
+    "class": "archer",
+    "critical": 19
   },
   {
+    "id": 91,
     "baseStatus": {
-      "Name": "Drak Lorn",
-      "Health": 86,
-      "Attack": 17
+      "name": "Izaryn Ild",
+      "health": 60,
+      "attack": 17
+    },
+    "class": "archer",
+    "critical": 14
+  },
+  {
+    "id": 92,
+    "baseStatus": {
+      "name": "Nym Wyn",
+      "health": 120,
+      "attack": 19
     },
     "class": "paladin",
     "shield": 2
   },
   {
+    "id": 93,
     "baseStatus": {
-      "Name": "Rhaed Xylo",
-      "Health": 126,
-      "Attack": 13
+      "name": "Ryl Hyran",
+      "health": 70,
+      "attack": 5
     },
-    "class": "archer",
-    "critical": 5
+    "class": "mage",
+    "mana": 21
   },
   {
+    "id": 94,
     "baseStatus": {
-      "Name": "Mav Wryvan",
-      "Health": 68,
-      "Attack": 11
+      "name": "Vor Dorn",
+      "health": 140,
+      "attack": 10
     },
     "class": "archer",
-    "critical": 11
+    "critical": 19
   },
   {
+    "id": 95,
     "baseStatus": {
-      "Name": "Tyr Brev",
-      "Health": 147,
-      "Attack": 5
+      "name": "Falen Falen",
+      "health": 110,
+      "attack": 5
     },
-    "class": "archer",
-    "critical": 7
+    "class": "mage",
+    "mana": 17
   },
   {
+    "id": 96,
     "baseStatus": {
-      "Name": "Thyr Drak",
-      "Health": 108,
-      "Attack": 6
+      "name": "Ryl Yvaine",
+      "health": 140,
+      "attack": 6
     },
-    "class": "archer",
-    "critical": 15
+    "class": "mage",
+    "mana": 14
   },
   {
+    "id": 97,
     "baseStatus": {
-      "Name": "Thyr Riven",
-      "Health": 97,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Syl",
-      "Health": 75,
-      "Attack": 9
+      "name": "Tyr Morwyn",
+      "health": 60,
+      "attack": 7
     },
     "class": "paladin",
-    "shield": 4
+    "shield": 10
   },
   {
+    "id": 98,
     "baseStatus": {
-      "Name": "Quil Wrynn",
-      "Health": 137,
-      "Attack": 10
+      "name": "Bryn Drev",
+      "health": 80,
+      "attack": 15
+    },
+    "class": "mage",
+    "mana": 27
+  },
+  {
+    "id": 99,
+    "baseStatus": {
+      "name": "Morwyn Jorev",
+      "health": 130,
+      "attack": 17
     },
     "class": "archer",
-    "critical": 17
+    "critical": 18
   },
   {
+    "id": 100,
     "baseStatus": {
-      "Name": "Ild Cyril",
-      "Health": 89,
-      "Attack": 5
+      "name": "Taryn Prax",
+      "health": 100,
+      "attack": 18
     },
     "class": "archer",
     "critical": 10
   },
   {
+    "id": 101,
     "baseStatus": {
-      "Name": "Ild Wyn",
-      "Health": 93,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Sarvan",
-      "Health": 114,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Tyr",
-      "Health": 74,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Thal Varyvan",
-      "Health": 140,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Hyran",
-      "Health": 142,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Othyran",
-      "Health": 96,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Brev",
-      "Health": 114,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Syr",
-      "Health": 68,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Zoren",
-      "Health": 159,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Faelar",
-      "Health": 95,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Faelar",
-      "Health": 69,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Kaelen Kryvan",
-      "Health": 108,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Vor",
-      "Health": 131,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Eryn",
-      "Health": 138,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Evar",
-      "Health": 118,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Hael",
-      "Health": 105,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Kaelen Tyr",
-      "Health": 94,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Drak",
-      "Health": 146,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Nym",
-      "Health": 64,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Lor Lor",
-      "Health": 143,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Lor",
-      "Health": 145,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Rhaev",
-      "Health": 146,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Hest",
-      "Health": 127,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Drev Syl",
-      "Health": 128,
-      "Attack": 6
+      "name": "Suryo",
+      "health": 90,
+      "attack": 12
     },
     "class": "archer",
     "critical": 14
   },
   {
-    "baseStatus": {
-      "Name": "Hael Arc",
-      "Health": 106,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Jarr",
-      "Health": 94,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Ulf",
-      "Health": 132,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Pryvan",
-      "Health": 149,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Myr",
-      "Health": 86,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Izaryn",
-      "Health": 153,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Faelyn",
-      "Health": 96,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Prax Thal",
-      "Health": 156,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Jarr",
-      "Health": 141,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Krynn",
-      "Health": 96,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Bryn",
-      "Health": 88,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Orin",
-      "Health": 82,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Evar",
-      "Health": 105,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Saev",
-      "Health": 121,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Hest",
-      "Health": 69,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Pryvan",
-      "Health": 93,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Varyn",
-      "Health": 93,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Jorv",
-      "Health": 75,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Dael",
-      "Health": 82,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Drev",
-      "Health": 139,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Kryvan",
-      "Health": 158,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Hald",
-      "Health": 62,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Jareth",
-      "Health": 134,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Othyr",
-      "Health": 106,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Wyn",
-      "Health": 152,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Zylvan Lyth",
-      "Health": 127,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Yvryvan",
-      "Health": 142,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Prax Lyrian",
-      "Health": 66,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Zyl",
-      "Health": 143,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Lorn",
-      "Health": 121,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Zyl",
-      "Health": 133,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Verid",
-      "Health": 111,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Lyrevan",
-      "Health": 107,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Thyr",
-      "Health": 134,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Nym",
-      "Health": 85,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Aev",
-      "Health": 108,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Arc",
-      "Health": 69,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Eryvan",
-      "Health": 148,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Nyran",
-      "Health": 106,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Xanth",
-      "Health": 90,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Oryn",
-      "Health": 130,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Oryn",
-      "Health": 146,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Crys",
-      "Health": 108,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Lor",
-      "Health": 66,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Xyryvan",
-      "Health": 138,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Lorn",
-      "Health": 60,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Wryn",
-      "Health": 96,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Nyx",
-      "Health": 89,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Zyl",
-      "Health": 71,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Xanth",
-      "Health": 76,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Vex",
-      "Health": 74,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Vex",
-      "Health": 126,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Lyrevan",
-      "Health": 76,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Dael Wryvan",
-      "Health": 140,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Sarv",
-      "Health": 112,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Bael",
-      "Health": 71,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Yvaine",
-      "Health": 143,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Avar",
-      "Health": 60,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Ith",
-      "Health": 118,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Verid",
-      "Health": 84,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Eryvan",
-      "Health": 125,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Morvyn",
-      "Health": 76,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Vex",
-      "Health": 146,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Mav",
-      "Health": 110,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Tael",
-      "Health": 122,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Brev",
-      "Health": 85,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Glim",
-      "Health": 120,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Zel",
-      "Health": 130,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Cyril",
-      "Health": 115,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Jorv",
-      "Health": 112,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Aeth",
-      "Health": 102,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Zylvan Hest",
-      "Health": 80,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Cyr",
-      "Health": 63,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Sarvan",
-      "Health": 107,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Morwyn",
-      "Health": 125,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Jarr",
-      "Health": 113,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Thal",
-      "Health": 157,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Dael",
-      "Health": 75,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Rhaev",
-      "Health": 91,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryvan Arc",
-      "Health": 101,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Avar",
-      "Health": 106,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Vex",
-      "Health": 82,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Kaelen",
-      "Health": 146,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Eryvan",
-      "Health": 127,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Syr",
-      "Health": 141,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Brym",
-      "Health": 129,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Pryvan",
-      "Health": 106,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Onyx",
-      "Health": 120,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Thyr",
-      "Health": 148,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Morvyn",
-      "Health": 103,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Tael",
-      "Health": 105,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Gryff",
-      "Health": 135,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Grend",
-      "Health": 64,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Tyr",
-      "Health": 119,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Verid",
-      "Health": 124,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Zalt",
-      "Health": 68,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Jareth",
-      "Health": 103,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Varyn",
-      "Health": 141,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Zylvan Morwyn",
-      "Health": 146,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Hael",
-      "Health": 94,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Saev",
-      "Health": 66,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Grend",
-      "Health": 152,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Ivor",
-      "Health": 143,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Oryn",
-      "Health": 114,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Eryn",
-      "Health": 143,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Izaryn",
-      "Health": 92,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Othyran",
-      "Health": 93,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Xanth Morv",
-      "Health": 134,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Morv",
-      "Health": 142,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Fael",
-      "Health": 125,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Wrynn",
-      "Health": 157,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Gryth",
-      "Health": 144,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Bael",
-      "Health": 131,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Ebon",
-      "Health": 67,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Morvyn",
-      "Health": 118,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Zalt",
-      "Health": 123,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Ulf",
-      "Health": 118,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Xyryvan",
-      "Health": 140,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyran Faelyn",
-      "Health": 142,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Drev",
-      "Health": 87,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Crys",
-      "Health": 119,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Grend Aer",
-      "Health": 62,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Faelar",
-      "Health": 119,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Thyran",
-      "Health": 89,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Cael",
-      "Health": 139,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Umbr",
-      "Health": 103,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Ulf",
-      "Health": 140,
-      "Attack": 7
+    "id": 102,
+    "baseStatus": {
+      "name": "Roon",
+      "health": 140,
+      "attack": 8
     },
     "class": "mage",
     "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyril Kryvan",
-      "Health": 69,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Ild",
-      "Health": 125,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Othyran",
-      "Health": 127,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Ymir",
-      "Health": 145,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Zylvan Faelyn",
-      "Health": 112,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Wryn",
-      "Health": 134,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Alar",
-      "Health": 146,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Pryvan",
-      "Health": 98,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Avar",
-      "Health": 70,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Wryvan",
-      "Health": 156,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Mav",
-      "Health": 76,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Ild",
-      "Health": 113,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Zalt",
-      "Health": 151,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Hyld",
-      "Health": 108,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Thyran",
-      "Health": 77,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Ryl",
-      "Health": 149,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Wryn",
-      "Health": 86,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Xyl",
-      "Health": 158,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Kryll",
-      "Health": 123,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Aeth",
-      "Health": 89,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Hest Cael",
-      "Health": 127,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Zoren Prax",
-      "Health": 91,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Sarvan",
-      "Health": 133,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaed Varyvan",
-      "Health": 143,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Xyl",
-      "Health": 100,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Xylo",
-      "Health": 71,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Thal",
-      "Health": 146,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvaine Lyrian",
-      "Health": 128,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Bryn",
-      "Health": 121,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvren Yvryvan",
-      "Health": 112,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Orin",
-      "Health": 77,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Tael Yvaine",
-      "Health": 101,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Tael Wyrn",
-      "Health": 75,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Xanth",
-      "Health": 101,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Fyr",
-      "Health": 110,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Eryn",
-      "Health": 63,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Wryn",
-      "Health": 76,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Jor",
-      "Health": 122,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Taryn",
-      "Health": 146,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Bryn",
-      "Health": 153,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Ulf",
-      "Health": 70,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Ebon",
-      "Health": 134,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Ryl",
-      "Health": 122,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Evar",
-      "Health": 62,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Othyran",
-      "Health": 124,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvaine Pyr",
-      "Health": 135,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Quil Othyr",
-      "Health": 64,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Izar Alar",
-      "Health": 102,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Mav",
-      "Health": 112,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Dorn",
-      "Health": 145,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyril Cael",
-      "Health": 140,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Bel",
-      "Health": 124,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Wyrn",
-      "Health": 90,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Ulf",
-      "Health": 70,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Varyn",
-      "Health": 67,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Grend",
-      "Health": 72,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Ryl",
-      "Health": 111,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Lyrian",
-      "Health": 156,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Aer",
-      "Health": 80,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Zoren",
-      "Health": 102,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Riven",
-      "Health": 137,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Verid",
-      "Health": 121,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Drev",
-      "Health": 110,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Aev",
-      "Health": 113,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Pryvan",
-      "Health": 116,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Cael",
-      "Health": 79,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Thal",
-      "Health": 77,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Hald",
-      "Health": 90,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Lorn",
-      "Health": 156,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Kael Mav",
-      "Health": 155,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Eryvan",
-      "Health": 135,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Zalt",
-      "Health": 131,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Bryn",
-      "Health": 93,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Jor Hyld",
-      "Health": 93,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Hael",
-      "Health": 152,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Xyl",
-      "Health": 89,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Lyth",
-      "Health": 126,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Drevyn",
-      "Health": 69,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Jarr",
-      "Health": 157,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Nyx",
-      "Health": 95,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Wyrn",
-      "Health": 133,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Wrynn",
-      "Health": 67,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Jor",
-      "Health": 71,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Izar Pryth",
-      "Health": 108,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Kryll",
-      "Health": 134,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Nyr",
-      "Health": 92,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Lorn",
-      "Health": 149,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Aeth",
-      "Health": 82,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Ith",
-      "Health": 115,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Xanth",
-      "Health": 142,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Aev Vor",
-      "Health": 89,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Morv",
-      "Health": 61,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Izaryn",
-      "Health": 117,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Morvyn",
-      "Health": 131,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Tyr",
-      "Health": 83,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Othyr",
-      "Health": 136,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Pyr",
-      "Health": 61,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Ymir",
-      "Health": 146,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Glim",
-      "Health": 76,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Morvyn",
-      "Health": 70,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Yvaine",
-      "Health": 101,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Eryvan",
-      "Health": 143,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Bel",
-      "Health": 120,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Lyrevan",
-      "Health": 124,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Ivor",
-      "Health": 137,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Pyr",
-      "Health": 67,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Kryvan",
-      "Health": 132,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Avar",
-      "Health": 80,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Jareth",
-      "Health": 148,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Varyn",
-      "Health": 67,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Eryn",
-      "Health": 131,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Drev",
-      "Health": 69,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Zoren",
-      "Health": 106,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Kryvan",
-      "Health": 67,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Evar",
-      "Health": 116,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Izar",
-      "Health": 123,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Varyn",
-      "Health": 112,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Jorev",
-      "Health": 64,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Othyr",
-      "Health": 136,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Ivor",
-      "Health": 75,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Othyran",
-      "Health": 114,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Othyran",
-      "Health": 80,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Glim",
-      "Health": 136,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Dael",
-      "Health": 125,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Wryvan",
-      "Health": 69,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Saev",
-      "Health": 127,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Pryvan",
-      "Health": 75,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Morwyn",
-      "Health": 91,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Hael",
-      "Health": 141,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Myr",
-      "Health": 146,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Thyran",
-      "Health": 65,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Valen",
-      "Health": 101,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Gyr",
-      "Health": 147,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Nyx",
-      "Health": 83,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Lyth",
-      "Health": 78,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Drak",
-      "Health": 96,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Drevyn",
-      "Health": 129,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Cael",
-      "Health": 122,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Eld",
-      "Health": 104,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Lyth",
-      "Health": 66,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Eryvan",
-      "Health": 80,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Syr",
-      "Health": 111,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Hael",
-      "Health": 131,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Cael",
-      "Health": 146,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Kael",
-      "Health": 122,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Thyr",
-      "Health": 113,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Ith",
-      "Health": 114,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Lyth",
-      "Health": 121,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Bael",
-      "Health": 89,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Zoren",
-      "Health": 64,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Hyran",
-      "Health": 127,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Brev",
-      "Health": 158,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Aev",
-      "Health": 134,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Yvaine",
-      "Health": 151,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Jorev",
-      "Health": 122,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Ebon Zalt",
-      "Health": 93,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Gryff",
-      "Health": 88,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Gryth",
-      "Health": 124,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Ild",
-      "Health": 104,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Cael",
-      "Health": 132,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Wyn",
-      "Health": 141,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyril Dael",
-      "Health": 157,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Rhaev",
-      "Health": 78,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Alar Morvyn",
-      "Health": 72,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Izar Onyx",
-      "Health": 89,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Alar",
-      "Health": 118,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Sarvan",
-      "Health": 119,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Syr",
-      "Health": 131,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Falen",
-      "Health": 78,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Izar",
-      "Health": 76,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Lor",
-      "Health": 112,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Xanth",
-      "Health": 118,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Corv",
-      "Health": 60,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Eryvan",
-      "Health": 112,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Pryvan",
-      "Health": 62,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Dael Prax",
-      "Health": 81,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Aeth",
-      "Health": 116,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Faelar",
-      "Health": 77,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Quil",
-      "Health": 103,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Aev",
-      "Health": 136,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Verid",
-      "Health": 137,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Othyran",
-      "Health": 65,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Crys",
-      "Health": 132,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Morvyn",
-      "Health": 147,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Yvryvan",
-      "Health": 139,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Aev Glim",
-      "Health": 96,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Eryn",
-      "Health": 122,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Ryl",
-      "Health": 131,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Pryth",
-      "Health": 118,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Hyran",
-      "Health": 72,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Rhaevan",
-      "Health": 145,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Izar",
-      "Health": 143,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Kael Valen",
-      "Health": 136,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Nyx",
-      "Health": 140,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Ebon",
-      "Health": 132,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Corv",
-      "Health": 153,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Hest",
-      "Health": 139,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Lorn",
-      "Health": 138,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Morvyn",
-      "Health": 95,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Brev",
-      "Health": 141,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Sarvan",
-      "Health": 87,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Saev",
-      "Health": 101,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyr Kael",
-      "Health": 146,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Gryff",
-      "Health": 67,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Prax",
-      "Health": 80,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Faelar",
-      "Health": 79,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Kael",
-      "Health": 108,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Faelar",
-      "Health": 121,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Corv",
-      "Health": 77,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Prax",
-      "Health": 142,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Brev",
-      "Health": 149,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 26
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Eryn",
-      "Health": 61,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Riven",
-      "Health": 63,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Drak",
-      "Health": 137,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Glim",
-      "Health": 103,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Umbr Wyrn",
-      "Health": 117,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Bael",
-      "Health": 151,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Eryvan",
-      "Health": 112,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Falen",
-      "Health": 96,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Morvyn",
-      "Health": 99,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrevan Varyvan",
-      "Health": 154,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Wyn",
-      "Health": 67,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Eryn",
-      "Health": 133,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Fyr",
-      "Health": 133,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Krynn",
-      "Health": 84,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvaine Zoren",
-      "Health": 81,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Wrynn",
-      "Health": 99,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Gryth",
-      "Health": 66,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Taryn",
-      "Health": 141,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Nyran",
-      "Health": 90,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Orin",
-      "Health": 136,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Cyril",
-      "Health": 159,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Verid",
-      "Health": 153,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Wryvan",
-      "Health": 105,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Nyr",
-      "Health": 66,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Hael Rhaevan",
-      "Health": 103,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Glim",
-      "Health": 143,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Hael Prax",
-      "Health": 96,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Saev Verid",
-      "Health": 90,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Dael",
-      "Health": 80,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Oryn",
-      "Health": 106,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Nyr",
-      "Health": 101,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Kael Falen",
-      "Health": 101,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Niv",
-      "Health": 87,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Yvryvan",
-      "Health": 106,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Vex",
-      "Health": 132,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaed Varyvan",
-      "Health": 65,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Ild",
-      "Health": 107,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Xyron",
-      "Health": 79,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Brym",
-      "Health": 156,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvaine Jorv",
-      "Health": 99,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Verid",
-      "Health": 107,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Ulf",
-      "Health": 132,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Nyx",
-      "Health": 76,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Valen",
-      "Health": 146,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Arc",
-      "Health": 68,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Wrynn",
-      "Health": 117,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Aethyr",
-      "Health": 88,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Eryn",
-      "Health": 151,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Kryll",
-      "Health": 77,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Xanth",
-      "Health": 86,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Nyran",
-      "Health": 103,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Lor Wryvan",
-      "Health": 152,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Xyl",
-      "Health": 153,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Ivor",
-      "Health": 118,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Thyr",
-      "Health": 91,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Taryn",
-      "Health": 113,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Niv",
-      "Health": 112,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Drevyn Grend",
-      "Health": 98,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Sarvan",
-      "Health": 82,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Zoren",
-      "Health": 120,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Zalt",
-      "Health": 131,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Alar Onyx",
-      "Health": 128,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Aure",
-      "Health": 145,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Quil",
-      "Health": 145,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Vor",
-      "Health": 103,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Cyril",
-      "Health": 143,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Eryvan",
-      "Health": 100,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Sarv",
-      "Health": 67,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Nyx",
-      "Health": 112,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Hael Xyron",
-      "Health": 82,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Aethyr",
-      "Health": 100,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Wrynn Varyn",
-      "Health": 92,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Grend Dael",
-      "Health": 144,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Oryn",
-      "Health": 69,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Vor",
-      "Health": 84,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Aer",
-      "Health": 116,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Aure Ild",
-      "Health": 158,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Bel",
-      "Health": 67,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Vex Mav",
-      "Health": 126,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Kaelen Hest",
-      "Health": 70,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Faelyn",
-      "Health": 147,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Lyrian",
-      "Health": 119,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Yvren",
-      "Health": 61,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Zalt",
-      "Health": 68,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Nyx",
-      "Health": 114,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Hyld",
-      "Health": 72,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrian Ryl",
-      "Health": 155,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyr Ith",
-      "Health": 102,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Nym",
-      "Health": 78,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Niv",
-      "Health": 117,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Drevyn",
-      "Health": 65,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyvan Kryll",
-      "Health": 138,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Tyr Oryn",
-      "Health": 89,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Wryvan",
-      "Health": 127,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Dael",
-      "Health": 115,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Crys",
-      "Health": 153,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Bel",
-      "Health": 116,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Othyr",
-      "Health": 150,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Lyth",
-      "Health": 77,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 25
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Aer",
-      "Health": 109,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Alar Aeth",
-      "Health": 159,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Syr",
-      "Health": 140,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Sarvan",
-      "Health": 107,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Nym",
-      "Health": 117,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryvan Zalt",
-      "Health": 69,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Grend Rhaed",
-      "Health": 73,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyran Jareth",
-      "Health": 102,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Eld",
-      "Health": 105,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Hael Jorev",
-      "Health": 142,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Fyr",
-      "Health": 139,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Krynn",
-      "Health": 132,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Jorev",
-      "Health": 115,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Nym",
-      "Health": 72,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Zalt",
-      "Health": 138,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Quil",
-      "Health": 96,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyr Yvren",
-      "Health": 62,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Nyr",
-      "Health": 97,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Niv",
-      "Health": 151,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Yvryvan",
-      "Health": 62,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Thal Kaelen",
-      "Health": 104,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Wryn",
-      "Health": 67,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyr Faelar",
-      "Health": 120,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryvan Lyth",
-      "Health": 109,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Yvaine",
-      "Health": 126,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Falen",
-      "Health": 64,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Wryvan",
-      "Health": 151,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Fael",
-      "Health": 133,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaed Izar",
-      "Health": 81,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Fyr Riven",
-      "Health": 96,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Ild Crys",
-      "Health": 85,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Falen Onyx",
-      "Health": 128,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Varyn",
-      "Health": 154,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Arc",
-      "Health": 152,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Orin Faelyn",
-      "Health": 142,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Zyl",
-      "Health": 114,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyr Gyr",
-      "Health": 101,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Verid Corv",
-      "Health": 136,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Xylo",
-      "Health": 91,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Jorv",
-      "Health": 107,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Drev Aer",
-      "Health": 72,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Nyx",
-      "Health": 77,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Valen",
-      "Health": 69,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Aev Othyran",
-      "Health": 64,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Cael",
-      "Health": 153,
-      "Attack": 17
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Wrynn",
-      "Health": 105,
-      "Attack": 9
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Jor",
-      "Health": 144,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Tael",
-      "Health": 158,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Alar",
-      "Health": 101,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Nym",
-      "Health": 88,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryvan Gyr",
-      "Health": 119,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Cyril Eryn",
-      "Health": 103,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Yvryvan",
-      "Health": 92,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Xylo",
-      "Health": 70,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyld Gryth",
-      "Health": 141,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Pyr Faelar",
-      "Health": 133,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Nyran",
-      "Health": 80,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Ith",
-      "Health": 89,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyryvan Nyx",
-      "Health": 84,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 24
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Mav",
-      "Health": 122,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Wrynn",
-      "Health": 98,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 22
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaed Grend",
-      "Health": 63,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Orin Saev",
-      "Health": 114,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Vex",
-      "Health": 145,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarv Nyx",
-      "Health": 101,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyrn Zoren",
-      "Health": 93,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Wyrn",
-      "Health": 121,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Myr Arc",
-      "Health": 103,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Drak Morwyn",
-      "Health": 94,
-      "Attack": 6
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Aer",
-      "Health": 140,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Faelyn",
-      "Health": 92,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Aethyr Bel",
-      "Health": 106,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Gyr",
-      "Health": 136,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Xyron",
-      "Health": 61,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Zel Eryvan",
-      "Health": 143,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Yvaine",
-      "Health": 66,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvaine Krynn",
-      "Health": 118,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Wyn",
-      "Health": 112,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Pyr",
-      "Health": 152,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Oryn Morwyn",
-      "Health": 156,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Pryth",
-      "Health": 122,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Bael Othyran",
-      "Health": 108,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Fael",
-      "Health": 106,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Morvyn Thyran",
-      "Health": 65,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Lor Wryvan",
-      "Health": 127,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Hyran Brym",
-      "Health": 102,
-      "Attack": 9
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Kael",
-      "Health": 86,
-      "Attack": 17
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Brym Hyld",
-      "Health": 143,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Hael",
-      "Health": 105,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Morv",
-      "Health": 85,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaev Rhaevan",
-      "Health": 79,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Glim",
-      "Health": 110,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Sarv",
-      "Health": 75,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Othyr",
-      "Health": 131,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorv Fael",
-      "Health": 90,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Xylo",
-      "Health": 64,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Orin Hael",
-      "Health": 153,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Hest Brym",
-      "Health": 76,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Xylo Gryff",
-      "Health": 112,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Thyran",
-      "Health": 100,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 18
-  },
-  {
-    "baseStatus": {
-      "Name": "Vor Rhaed",
-      "Health": 122,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Corv Bael",
-      "Health": 136,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Zoren",
-      "Health": 122,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Dorn Izaryn",
-      "Health": 133,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryth Lyrian",
-      "Health": 111,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Yvaine",
-      "Health": 125,
-      "Attack": 16
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Nym",
-      "Health": 62,
-      "Attack": 12
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Verid",
-      "Health": 132,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Lyrian",
-      "Health": 90,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Rhaev",
-      "Health": 126,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryvan Jorv",
-      "Health": 95,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Riven Grend",
-      "Health": 94,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Kael Gryth",
-      "Health": 91,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Vex",
-      "Health": 143,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Gyr Drak",
-      "Health": 111,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Prax",
-      "Health": 93,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Orin Ivor",
-      "Health": 79,
-      "Attack": 19
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Aer Faelar",
-      "Health": 127,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Rhaed",
-      "Health": 158,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Zylvan Pryth",
-      "Health": 102,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Sarvan Cyril",
-      "Health": 139,
-      "Attack": 5
-    },
-    "class": "archer",
-    "critical": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Krynn",
-      "Health": 75,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Xylo",
-      "Health": 127,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Valen Cael",
-      "Health": 89,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Wyn",
-      "Health": 131,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Aeth Aure",
-      "Health": 112,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Zyl Hyld",
-      "Health": 138,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Onyx Ivor",
-      "Health": 96,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Lyrevan",
-      "Health": 97,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryvan Hyran",
-      "Health": 60,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Varyn",
-      "Health": 126,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Verid",
-      "Health": 128,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Nym Xanth",
-      "Health": 76,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Morvyn",
-      "Health": 154,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Aev",
-      "Health": 126,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Aethyr",
-      "Health": 111,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Wryn",
-      "Health": 89,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Rhaev",
-      "Health": 118,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Rhaevan Kael",
-      "Health": 68,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Zalt Eryvan",
-      "Health": 70,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyron Syr",
-      "Health": 130,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Gryth",
-      "Health": 119,
-      "Attack": 11
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Pryvan Grend",
-      "Health": 61,
-      "Attack": 16
-    },
-    "class": "archer",
-    "critical": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Lor",
-      "Health": 151,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Crys",
-      "Health": 68,
-      "Attack": 15
-    },
-    "class": "mage",
-    "mana": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryth Yvryvan",
-      "Health": 134,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Morv Nyr",
-      "Health": 93,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 17
-  },
-  {
-    "baseStatus": {
-      "Name": "Bryn Yvren",
-      "Health": 153,
-      "Attack": 6
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Prax Izaryn",
-      "Health": 118,
-      "Attack": 18
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Izaryn",
-      "Health": 85,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Hald Nyx",
-      "Health": 86,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Xanth Hael",
-      "Health": 134,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Eld Jarr",
-      "Health": 114,
-      "Attack": 14
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyran Izar",
-      "Health": 112,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Wyn Ymir",
-      "Health": 94,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Gryth",
-      "Health": 124,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Mav Lyth",
-      "Health": 151,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 16
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Othyr",
-      "Health": 61,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Morwyn Syl",
-      "Health": 157,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Drev Aev",
-      "Health": 98,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 13
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Gryff",
-      "Health": 87,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Kryvan",
-      "Health": 147,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 12
-  },
-  {
-    "baseStatus": {
-      "Name": "Varyn Aev",
-      "Health": 65,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Krynn Rhaed",
-      "Health": 114,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Jarr Taryn",
-      "Health": 107,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Xyron",
-      "Health": 124,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Lyrian",
-      "Health": 156,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Evar Izaryn",
-      "Health": 146,
-      "Attack": 13
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Morvyn",
-      "Health": 130,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Grend",
-      "Health": 96,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Jareth",
-      "Health": 110,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 14
-  },
-  {
-    "baseStatus": {
-      "Name": "Jorev Morv",
-      "Health": 80,
-      "Attack": 15
-    },
-    "class": "archer",
-    "critical": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Izar Jareth",
-      "Health": 106,
-      "Attack": 10
-    },
-    "class": "mage",
-    "mana": 20
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelyn Crys",
-      "Health": 61,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Izaryn Aethyr",
-      "Health": 108,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Ith Kaelen",
-      "Health": 152,
-      "Attack": 16
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Corv",
-      "Health": 150,
-      "Attack": 11
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Alar Taryn",
-      "Health": 117,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Yvryvan Valen",
-      "Health": 104,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 23
-  },
-  {
-    "baseStatus": {
-      "Name": "Glim Zoren",
-      "Health": 97,
-      "Attack": 7
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Ivor Morv",
-      "Health": 99,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 15
-  },
-  {
-    "baseStatus": {
-      "Name": "Jareth Falen",
-      "Health": 126,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Avar Bryn",
-      "Health": 157,
-      "Attack": 11
-    },
-    "class": "archer",
-    "critical": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Lorn Gryff",
-      "Health": 109,
-      "Attack": 13
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Thyr Vex",
-      "Health": 63,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Xyl Lyrian",
-      "Health": 108,
-      "Attack": 14
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Ryl Grend",
-      "Health": 130,
-      "Attack": 12
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Eld",
-      "Health": 123,
-      "Attack": 5
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Syr Nyran",
-      "Health": 98,
-      "Attack": 13
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyrian Zylvan",
-      "Health": 80,
-      "Attack": 18
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Brev Ulf",
-      "Health": 157,
-      "Attack": 9
-    },
-    "class": "paladin",
-    "shield": 2
-  },
-  {
-    "baseStatus": {
-      "Name": "Ulf Valen",
-      "Health": 127,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 3
-  },
-  {
-    "baseStatus": {
-      "Name": "Arc Ulf",
-      "Health": 149,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 7
-  },
-  {
-    "baseStatus": {
-      "Name": "Eryn Izar",
-      "Health": 159,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyran Fyr",
-      "Health": 94,
-      "Attack": 17
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Syl Jor",
-      "Health": 135,
-      "Attack": 14
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Othyran Lyth",
-      "Health": 112,
-      "Attack": 6
-    },
-    "class": "mage",
-    "mana": 19
-  },
-  {
-    "baseStatus": {
-      "Name": "Quil Aev",
-      "Health": 154,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Xanth Drak",
-      "Health": 132,
-      "Attack": 19
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Crys Niv",
-      "Health": 142,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Phos Fael",
-      "Health": 63,
-      "Attack": 10
-    },
-    "class": "paladin",
-    "shield": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Cael Jor",
-      "Health": 138,
-      "Attack": 8
-    },
-    "class": "paladin",
-    "shield": 4
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Taryn",
-      "Health": 157,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 10
-  },
-  {
-    "baseStatus": {
-      "Name": "Kryll Drev",
-      "Health": 87,
-      "Attack": 8
-    },
-    "class": "archer",
-    "critical": 8
-  },
-  {
-    "baseStatus": {
-      "Name": "Taryn Aure",
-      "Health": 69,
-      "Attack": 8
-    },
-    "class": "mage",
-    "mana": 28
-  },
-  {
-    "baseStatus": {
-      "Name": "Gryff Hald",
-      "Health": 125,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 9
-  },
-  {
-    "baseStatus": {
-      "Name": "Bel Phos",
-      "Health": 151,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Ymir Zalt",
-      "Health": 99,
-      "Attack": 7
-    },
-    "class": "archer",
-    "critical": 6
-  },
-  {
-    "baseStatus": {
-      "Name": "Lyth Zalt",
-      "Health": 154,
-      "Attack": 18
-    },
-    "class": "mage",
-    "mana": 29
-  },
-  {
-    "baseStatus": {
-      "Name": "Wryn Nyran",
-      "Health": 88,
-      "Attack": 7
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Nyx Grend",
-      "Health": 142,
-      "Attack": 15
-    },
-    "class": "paladin",
-    "shield": 5
-  },
-  {
-    "baseStatus": {
-      "Name": "Fael Sarvan",
-      "Health": 108,
-      "Attack": 5
-    },
-    "class": "mage",
-    "mana": 21
-  },
-  {
-    "baseStatus": {
-      "Name": "Quil Wryn",
-      "Health": 91,
-      "Attack": 19
-    },
-    "class": "mage",
-    "mana": 27
-  },
-  {
-    "baseStatus": {
-      "Name": "Faelar Mav",
-      "Health": 93,
-      "Attack": 12
-    },
-    "class": "mage",
-    "mana": 11
-  },
-  {
-    "baseStatus": {
-      "Name": "Niv Lyth",
-      "Health": 117,
-      "Attack": 10
-    },
-    "class": "archer",
-    "critical": 15
   }
 ]

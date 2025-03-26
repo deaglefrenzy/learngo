@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 )
 
-func CharFactory() *models.Character {
+func CharFactory(id int) *models.Character {
 	classes := []string{"paladin", "archer", "mage"}
 	randomClass := classes[rand.Intn(len(classes))]
 
@@ -39,6 +39,7 @@ func CharFactory() *models.Character {
 	switch randomClass {
 	case "paladin":
 		return &models.Character{
+			ID: id,
 			BaseStatus: models.BaseStatus{
 				Name:   name,
 				Health: health,
@@ -49,6 +50,7 @@ func CharFactory() *models.Character {
 		}
 	case "archer":
 		return &models.Character{
+			ID: id,
 			BaseStatus: models.BaseStatus{
 				Name:   name,
 				Health: health,
@@ -59,6 +61,7 @@ func CharFactory() *models.Character {
 		}
 	case "mage":
 		return &models.Character{
+			ID: id,
 			BaseStatus: models.BaseStatus{
 				Name:   name,
 				Health: health,
@@ -76,8 +79,8 @@ func CharSeeder(count int, filename string) error {
 
 	characters := make([]models.Character, 0, count)
 
-	for i := 0; i < count; i++ {
-		char := CharFactory()
+	for i := 1; i <= count; i++ {
+		char := CharFactory(i)
 		characters = append(characters, *char)
 	}
 
@@ -94,4 +97,10 @@ func CharSeeder(count int, filename string) error {
 
 	fmt.Printf("%d characters added into %s.\n", len(characters), filename)
 	return nil
+}
+
+func main() {
+	if err := CharSeeder(100, "characters.json"); err != nil {
+		fmt.Println("Error seeding characters:", err)
+	}
 }

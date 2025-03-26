@@ -2,14 +2,19 @@ package routes
 
 import (
 	"go_tutorial/handlers"
-	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
-func SetupRoutes() *http.ServeMux {
-	mux := http.NewServeMux()
+func SetupRoutes() *mux.Router {
+	router := mux.NewRouter()
 
-	mux.HandleFunc("/", handlers.HandleRoot)
-	mux.HandleFunc("/characters", handlers.CreateChar)
+	router.HandleFunc("/", handlers.HandleRoot).Methods("GET")
+	router.HandleFunc("/characters", handlers.IndexChars).Methods("GET")
+	router.HandleFunc("/characters", handlers.CreateChar).Methods("POST")
+	router.HandleFunc("/characters/{id}", handlers.ShowChar).Methods("GET")
+	router.HandleFunc("/characters/{id}", handlers.ChangeCharName).Methods("PATCH")
+	router.HandleFunc("/characters/{id}", handlers.DeleteChar).Methods("DELETE")
 
-	return mux
+	return router
 }

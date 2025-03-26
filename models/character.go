@@ -12,25 +12,18 @@ import (
 )
 
 type BaseStatus struct {
-	Name   string
-	Health int
-	Attack int
+	Name   string `json:"name"`
+	Health int    `json:"health"`
+	Attack int    `json:"attack"`
 }
 
 type Character struct {
-	BaseStatus
-	Class    string `json:"class"`
-	Shield   int    `json:"shield,omitempty"`
-	Critical int    `json:"critical,omitempty"`
-	Mana     int    `json:"mana,omitempty"`
-}
-
-func (c *BaseStatus) GetName() string {
-	return c.Name
-}
-
-func (c *BaseStatus) GetHealth() int {
-	return c.Health
+	ID         int        `json:"id"`
+	BaseStatus BaseStatus `json:"baseStatus"`
+	Class      string     `json:"class"`
+	Shield     int        `json:"shield,omitempty"`
+	Critical   int        `json:"critical,omitempty"`
+	Mana       int        `json:"mana,omitempty"`
 }
 
 func (c *BaseStatus) SetHealth(health int) {
@@ -41,11 +34,7 @@ func (c *BaseStatus) CharStatus() {
 	fmt.Println(c.Name, c.Health, c.Attack)
 }
 
-func (c *Character) GetClass() string {
-	return c.Class
-}
-
-func NewCharacter(name string, class string) Character {
+func NewCharacter(name string, class string) (Character, error) {
 	health := (rand.Intn(10) + 6) * 10
 	attack := rand.Intn(15) + 5
 	shield := 0
@@ -60,7 +49,20 @@ func NewCharacter(name string, class string) Character {
 		mana = rand.Intn(20) + 10
 	}
 
+	lastID := 0
+
+	jsonData, err := LoadArrayChar("characters.json")
+	if err != nil {
+		return Character{}, fmt.Errorf("error loading characters from file: %w", err)
+	}
+	if len(jsonData) > 0 {
+		lastItem := jsonData[len(jsonData)-1]
+		lastID = lastItem.ID
+	}
+
+	newID := lastID + 1
 	data := Character{
+		ID: newID,
 		BaseStatus: BaseStatus{
 			Name:   name,
 			Health: health,
@@ -71,7 +73,8 @@ func NewCharacter(name string, class string) Character {
 		Critical: critical,
 		Mana:     mana,
 	}
-	return data
+
+	return data, nil
 }
 
 func LoadCharacter(filename string, result *Character) error {
@@ -90,7 +93,7 @@ func PrintCharacter(v Character) string {
 	return string(formattedJSON)
 }
 
-func CharToJSON(filename string, data Character) error {
+func CharToJSON(filename string, data []Character) error {
 	dataJSON, err := json.MarshalIndent(data, "", "  ")
 	if err != nil {
 		return fmt.Errorf("error marshaling JSON: %w", err)
@@ -159,44 +162,44 @@ func ArrayCharToCSV(characters []Character, filename string) error {
 	return nil
 }
 
-func Battle(att *Character, def *Character) {
-	damage := att.BaseStatus.Attack
+// func Battle(att *Character, def *Character) {
+// 	damage := att.BaseStatus.Attack
 
-	if att.Class == "archer" {
-		if att.Critical > 0 && rand.Intn(100) < att.Critical {
-			damage *= 2
-			fmt.Printf("%s landed a critical hit!\n", att.BaseStatus.Name)
-		}
-	}
+// 	if att.Class == "archer" {
+// 		if att.Critical > 0 && rand.Intn(100) < att.Critical {
+// 			damage *= 2
+// 			fmt.Printf("%s landed a critical hit!\n", att.BaseStatus.Name)
+// 		}
+// 	}
 
-	if att.Class == "mage" {
-		damage += att.Mana / 2
-		att.Mana /= 2
-		fmt.Printf("%s used magic attack! Remaining mana: %d\n", att.BaseStatus.Name, att.Mana)
+// 	if att.Class == "mage" {
+// 		damage += att.Mana / 2
+// 		att.Mana /= 2
+// 		fmt.Printf("%s used magic attack! Remaining mana: %d\n", att.BaseStatus.Name, att.Mana)
 
-		CharToJSON("char-mage.json", *att)
-	}
+// 		CharToJSON("char-mage.json", *att)
+// 	}
 
-	if def.Class == "paladin" {
-		damage -= def.Shield
-		fmt.Printf("%s blocks some of the attack with his shield!\n", def.BaseStatus.Name)
-		if damage < 0 {
-			damage = 0
-		}
-		def.Shield -= 1
-	}
+// 	if def.Class == "paladin" {
+// 		damage -= def.Shield
+// 		fmt.Printf("%s blocks some of the attack with his shield!\n", def.BaseStatus.Name)
+// 		if damage < 0 {
+// 			damage = 0
+// 		}
+// 		def.Shield -= 1
+// 	}
 
-	newHealth := def.BaseStatus.Health - damage
-	def.BaseStatus.SetHealth(newHealth)
+// 	newHealth := def.BaseStatus.Health - damage
+// 	def.BaseStatus.SetHealth(newHealth)
 
-	fmt.Printf("%s attacks %s for %d damage. %s's health is now %d.\n",
-		att.BaseStatus.Name, def.BaseStatus.Name, damage, def.BaseStatus.Name, def.BaseStatus.Health)
+// 	fmt.Printf("%s attacks %s for %d damage. %s's health is now %d.\n",
+// 		att.BaseStatus.Name, def.BaseStatus.Name, damage, def.BaseStatus.Name, def.BaseStatus.Health)
 
-	if def.BaseStatus.Health <= 0 {
-		fmt.Printf("%s has been defeated!\n", def.BaseStatus.Name)
-	}
+// 	if def.BaseStatus.Health <= 0 {
+// 		fmt.Printf("%s has been defeated!\n", def.BaseStatus.Name)
+// 	}
 
-	filename := "char-" + def.Class + ".json"
-	CharToJSON(filename, *def)
+// 	filename := "char-" + def.Class + ".json"
+// 	CharToJSON(filename, *def)
 
-}
+// }
