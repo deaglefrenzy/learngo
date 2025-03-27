@@ -59,7 +59,7 @@ func GetAutoIncement(client *mongo.Client) int {
 
 	objectID, err := primitive.ObjectIDFromHex("67e4e853c2f4028ee4f83f4a")
 	if err != nil {
-		log.Fatalf("invalid ObjectId: %w", err)
+		log.Fatalf("invalid ObjectId: %s", err)
 		return 0
 	}
 	filter := bson.M{"_id": objectID}
@@ -158,7 +158,13 @@ func UpdateName(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 
 	collection := client.Database("testing").Collection("characters")
 
-	count, _ := collection.CountDocuments(context.Background(), bson.M{"baseStatus.name": input.NewName})
+	count, err := collection.CountDocuments(context.Background(), bson.M{"baseStatus.name": input.NewName})
+	if err != nil {
+		http.Error(w, "Failed to query MongoDB for name uniqueness", http.StatusInternalServerError)
+		log.Println("MongoDB count error:", err)
+		return
+	}
+	//log.Println("count:", count)
 	if count > 0 {
 		http.Error(w, "Character name already exists", http.StatusConflict)
 		return
