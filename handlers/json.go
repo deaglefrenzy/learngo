@@ -12,7 +12,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-func CreateChar(w http.ResponseWriter, r *http.Request) {
+func CreateCharJSON(w http.ResponseWriter, r *http.Request) {
 	var input struct {
 		Name  string `json:"name"`
 		Class string `json:"class"`
@@ -29,26 +29,32 @@ func CreateChar(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	newChar, err := models.NewCharacter(input.Name, input.Class)
+	lastID := 0
+	jsonData, err := models.LoadArrayChar("characters.json")
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+	}
+	if len(jsonData) > 0 {
+		lastItem := jsonData[len(jsonData)-1]
+		lastID = lastItem.ID
+	}
+	newID := lastID + 1
+
+	newChar, err := models.NewCharacter(newID, input.Name, input.Class)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
 		return
 	}
 
-	jsonData, err := models.LoadArrayChar("characters.json")
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
-		return
-	}
 	jsonData = append(jsonData, newChar)
 	models.CharToJSON("characters.json", jsonData)
 
 	utils.RespondJSON(w, newChar, http.StatusCreated)
 }
 
-func IndexChars(w http.ResponseWriter, r *http.Request) {
+func IndexCharsJSON(w http.ResponseWriter, r *http.Request) {
 	filename := "characters.json"
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	fileData, err := os.ReadFile(filepath)
 	if err != nil {
 		http.Error(w, "error loading JSON file.", http.StatusBadRequest)
@@ -65,7 +71,7 @@ func IndexChars(w http.ResponseWriter, r *http.Request) {
 	utils.RespondJSON(w, char, http.StatusCreated)
 }
 
-func ShowChar(w http.ResponseWriter, r *http.Request) {
+func ShowCharJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 
@@ -75,7 +81,7 @@ func ShowChar(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	filename := "characters.json"
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	fileData, err := os.ReadFile(filepath)
 	if err != nil {
 		http.Error(w, "Error loading JSON file.", http.StatusInternalServerError)
@@ -98,7 +104,7 @@ func ShowChar(w http.ResponseWriter, r *http.Request) {
 	http.Error(w, "Character not found", http.StatusNotFound)
 }
 
-func ChangeCharName(w http.ResponseWriter, r *http.Request) {
+func ChangeCharNameJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 
@@ -147,7 +153,7 @@ func ChangeCharName(w http.ResponseWriter, r *http.Request) {
 	utils.RespondJSON(w, updatedCharacters[id-1], http.StatusOK)
 }
 
-func DeleteChar(w http.ResponseWriter, r *http.Request) {
+func DeleteCharJSON(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 

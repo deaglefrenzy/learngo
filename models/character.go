@@ -34,7 +34,7 @@ func (c *BaseStatus) CharStatus() {
 	fmt.Println(c.Name, c.Health, c.Attack)
 }
 
-func NewCharacter(name string, class string) (Character, error) {
+func NewCharacter(id int, name string, class string) (Character, error) {
 	health := (rand.Intn(10) + 6) * 10
 	attack := rand.Intn(15) + 5
 	shield := 0
@@ -49,20 +49,8 @@ func NewCharacter(name string, class string) (Character, error) {
 		mana = rand.Intn(20) + 10
 	}
 
-	lastID := 0
-
-	jsonData, err := LoadArrayChar("characters.json")
-	if err != nil {
-		return Character{}, fmt.Errorf("error loading characters from file: %w", err)
-	}
-	if len(jsonData) > 0 {
-		lastItem := jsonData[len(jsonData)-1]
-		lastID = lastItem.ID
-	}
-
-	newID := lastID + 1
 	data := Character{
-		ID: newID,
+		ID: id,
 		BaseStatus: BaseStatus{
 			Name:   name,
 			Health: health,
@@ -99,7 +87,7 @@ func CharToJSON(filename string, data []Character) error {
 		return fmt.Errorf("error marshaling JSON: %w", err)
 	}
 
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	err = os.WriteFile(filepath, dataJSON, 0644)
 	if err != nil {
 		return fmt.Errorf("error writing JSON to file: %w", err)
@@ -108,7 +96,7 @@ func CharToJSON(filename string, data []Character) error {
 }
 
 func LoadArrayChar(filename string) ([]Character, error) {
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	fileData, err := os.ReadFile(filepath)
 	if err != nil {
 		return nil, fmt.Errorf("error loading JSON file: %w", err)
@@ -124,7 +112,7 @@ func LoadArrayChar(filename string) ([]Character, error) {
 }
 
 func ArrayCharToCSV(characters []Character, filename string) error {
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	file, err := os.Create(filepath)
 	if err != nil {
 		return fmt.Errorf("error creating CSV file: %w", err)

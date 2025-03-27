@@ -68,14 +68,28 @@ package main
 
 import (
 	"fmt"
+	"go_tutorial/db"
 	"go_tutorial/routes"
+	"log"
 	"net/http"
 )
 
 func main() {
-	mux := routes.SetupRoutes()
+
+	client, err := db.ConnectMongoDB()
+	if err != nil {
+		log.Fatal("Error connecting to MongoDB:", err)
+		return
+	}
+	defer db.CloseMongoDB(client)
+
+	database := client.Database("testing")
+	collection := database.Collection("characters")
+	fmt.Println("Using collection:", collection.Name())
+
+	r := routes.NewRouter(client)
 
 	fmt.Println("Server listening to 8080")
-	http.ListenAndServe(":8080", mux)
+	http.ListenAndServe(":8080", r)
 
 }

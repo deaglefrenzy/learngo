@@ -1,12 +1,18 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"go_tutorial/models"
+	"log"
 	"math/rand"
 	"os"
 	"path/filepath"
+	"time"
+
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func CharFactory(id int) *models.Character {
@@ -75,7 +81,7 @@ func CharFactory(id int) *models.Character {
 	}
 }
 
-func CharSeeder(count int, filename string) error {
+func CharSeederJSON(count int, filename string) error {
 
 	characters := make([]models.Character, 0, count)
 
@@ -89,7 +95,7 @@ func CharSeeder(count int, filename string) error {
 		return fmt.Errorf("error marshaling JSON: %w", err)
 	}
 
-	filepath := filepath.Join("database", filename)
+	filepath := filepath.Join("db", filename)
 	err = os.WriteFile(filepath, dataJSON, 0644)
 	if err != nil {
 		return fmt.Errorf("error writing JSON to file: %w", err)
@@ -99,8 +105,60 @@ func CharSeeder(count int, filename string) error {
 	return nil
 }
 
+func CharSeederMongoDB(client *mongo.Client, count int) error {
+	collection := client.Database("testing").Collection("characters")
+
+	characters := make([]interface{}, 0, count)
+
+	for i := 1; i <= count; i++ {
+		char := CharFactory(i)
+		characters = append(characters, *char)
+	}
+
+	_, err := collection.InsertMany(context.Background(), characters)
+	if err != nil {
+		return fmt.Errorf("error inserting characters into MongoDB: %w", err)
+	}
+
+	fmt.Printf("%d characters added into MongoDB collection 'characters'.", len(characters))
+	return nil
+}
+
+func connectMongoDB() (*mongo.Client, error) {
+	clientOptions := options.Client().ApplyURI("mongodb://localhost:27017")
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
+
+	client, err := mongo.Connect(ctx, clientOptions)
+	if err != nil {
+		return nil, err
+	}
+
+	err = client.Ping(ctx, nil)
+	if err != nil {
+		return nil, err
+	}
+
+	fmt.Println("Connected to MongoDB!")
+	return client, nil
+}
+
 func main() {
-	if err := CharSeeder(100, "characters.json"); err != nil {
-		fmt.Println("Error seeding characters:", err)
+	// if err := CharSeederJSON(100, "characters.json"); err != nil {
+	// 	fmt.Println("Error seeding characters:", err)
+	// }
+	client, err := connectMongoDB()
+	if err != nil {
+		log.Fatalf("Error connecting to MongoDB: %v", err)
+	}
+	defer func() {
+		if err := client.Disconnect(context.Background()); err != nil {
+			log.Fatalf("Error disconnecting from MongoDB: %v", err)
+		}
+	}()
+
+	err = CharSeederMongoDB(client, 50)
+	if err != nil {
+		log.Fatalf("Error seeding MongoDB: %v", err)
 	}
 }
