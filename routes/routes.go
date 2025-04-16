@@ -17,6 +17,9 @@ func NewRouter(charHandler *handlers.CharHandler, matchHandler *handlers.MatchHa
 	r.HandleFunc("/characters/{id}", charHandler.LevelUpChar).Methods("OPTIONS")
 
 	r.HandleFunc("/matches", matchHandler.CreateMatch).Methods("POST")
+	r.HandleFunc("/matches/{id}", matchHandler.GetMatch).Methods("GET")
+	r.HandleFunc("/matches/{id}", matchHandler.DestroyMatch).Methods("DELETE")
+	r.HandleFunc("/matches/{id}", matchHandler.StartBattle).Methods("OPTIONS")
 
 	return r
 }

@@ -10,6 +10,7 @@ import (
 	"time"
 
 	"github.com/google/uuid"
+	"github.com/gorilla/mux"
 	"go.mongodb.org/mongo-driver/bson"
 )
 
@@ -89,4 +90,53 @@ func (h *MatchHandler) CreateMatch(w http.ResponseWriter, r *http.Request) {
 	}
 
 	utils.RespondJSON(w, matchup, http.StatusOK)
+}
+
+func (h *MatchHandler) GetMatch(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	matchID := vars["id"]
+
+	if matchID == "" {
+		http.Error(w, "Match ID is required", http.StatusBadRequest)
+		return
+	}
+
+	var match models.Match
+	err := h.repo.FindOne(bson.M{"_id": matchID}, &match)
+	if err != nil {
+		http.Error(w, "Match not found: "+err.Error(), http.StatusNotFound)
+		return
+	}
+
+	utils.RespondJSON(w, match, http.StatusOK)
+}
+
+func (h *MatchHandler) DestroyMatch(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	matchID := vars["id"]
+
+	if matchID == "" {
+		http.Error(w, "Match ID is required", http.StatusBadRequest)
+		return
+	}
+
+	var match models.Match
+	filter := bson.M{"_id": matchID}
+	err := h.repo.FindOne(filter, &match)
+	if err != nil {
+		http.Error(w, "Match not found: "+err.Error(), http.StatusNotFound)
+		return
+	}
+
+	err = h.repo.DeleteOne(filter)
+	if err != nil {
+		http.Error(w, "Failed to delete match: "+err.Error(), http.StatusNotFound)
+		return
+	}
+
+	w.WriteHeader(http.StatusNoContent)
+}
+
+func (h *MatchHandler) StartBattle(w http.ResponseWriter, r *http.Request) {
+
 }
