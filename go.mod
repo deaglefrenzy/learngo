@@ -8,6 +8,7 @@ require (
 	github.com/gobuffalo/packr v1.30.1 // indirect
 	github.com/golang-module/carbon v1.7.3 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect

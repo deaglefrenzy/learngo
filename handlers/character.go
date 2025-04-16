@@ -1,9 +1,10 @@
 package handlers
 
 import (
-	"context"
 	"encoding/json"
+	"fmt"
 	"go_tutorial/models"
+	"go_tutorial/repository"
 	"go_tutorial/utils"
 	"log"
 	"net/http"
@@ -12,13 +13,17 @@ import (
 	"github.com/gorilla/mux"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
-	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func Create(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
+type CharHandler struct {
+	repo *repository.MongoRepository
+}
 
-	collection := client.Database("testing").Collection("characters")
+func NewCharHandler(repo *repository.MongoRepository) *CharHandler {
+	return &CharHandler{repo: repo}
+}
+
+func (h *CharHandler) CreateChar(w http.ResponseWriter, r *http.Request) {
 
 	var input struct {
 		Name  string `json:"name"`
@@ -35,8 +40,7 @@ func Create(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 		http.Error(w, "Character name & class required.", http.StatusBadRequest)
 		return
 	}
-
-	id := GetAutoIncement(client)
+	id := h.GetAutoIncrement(w, r)
 
 	newChar, err := models.NewCharacter(id, input.Name, input.Class)
 	if err != nil {
@@ -44,8 +48,7 @@ func Create(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 		return
 	}
 
-	_, err = collection.InsertOne(context.Background(), newChar)
-	if err != nil {
+	if err = h.repo.Create(newChar); err != nil {
 		http.Error(w, "Failed to insert character into MongoDB", http.StatusInternalServerError)
 		log.Println("MongoDB insert error:", err)
 		return
@@ -54,8 +57,9 @@ func Create(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 	utils.RespondJSON(w, newChar, http.StatusCreated)
 }
 
-func GetAutoIncement(client *mongo.Client) int {
-	collection := client.Database("testing").Collection("sequence")
+func (h *CharHandler) GetAutoIncrement(w http.ResponseWriter, r *http.Request) int {
+
+	sequenceRepo := h.repo.WithCollection("sequence")
 
 	objectID, err := primitive.ObjectIDFromHex("67e4e853c2f4028ee4f83f4a")
 	if err != nil {
@@ -63,75 +67,69 @@ func GetAutoIncement(client *mongo.Client) int {
 		return 0
 	}
 	filter := bson.M{"_id": objectID}
-	update := bson.M{"$inc": bson.M{"value": 1}}
-	options := options.FindOneAndUpdate().SetReturnDocument(options.After)
 
 	var result struct {
 		Value int `bson:"value"`
 	}
 
-	err = collection.FindOneAndUpdate(context.Background(), filter, update, options).Decode(&result)
+	err = sequenceRepo.FindOne(filter, &result)
 	if err != nil {
-		log.Fatalf("Error getting next value: %v", err)
+		log.Println("Auto increment find error:", err)
+		http.Error(w, "Failed to find auto increment", http.StatusInternalServerError)
+		return 0
+	}
+
+	update := bson.M{"$inc": bson.M{"value": 1}}
+
+	err = sequenceRepo.UpdateOne(filter, update)
+	if err != nil {
+		http.Error(w, "Failed to update auto increment", http.StatusInternalServerError)
 		return 0
 	}
 
 	return result.Value
 }
 
-func Index(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
+func (h *CharHandler) IndexChars(w http.ResponseWriter, r *http.Request) {
 
-	collection := client.Database("testing").Collection("characters")
-	ctx := context.Background()
-	cursor, err := collection.Find(ctx, bson.M{})
+	var characters []models.Character
+	err := h.repo.FindMany(map[string]interface{}{}, &characters)
 	if err != nil {
 		http.Error(w, "Failed to fetch characters: "+err.Error(), http.StatusInternalServerError)
 		return
 	}
-	defer cursor.Close(ctx)
 
-	var char []models.Character
-	if err = cursor.All(ctx, &char); err != nil {
-		http.Error(w, "Failed to decode characters: "+err.Error(), http.StatusInternalServerError)
-		return
+	if characters == nil {
+		characters = []models.Character{}
 	}
 
-	if char == nil {
-		char = []models.Character{}
-	}
-
-	utils.RespondJSON(w, char, http.StatusOK)
+	utils.RespondJSON(w, characters, http.StatusOK)
 }
 
-func Show(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
+func (h *CharHandler) ShowChar(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
-	idStr := vars["id"]
+	idParam := vars["id"]
 
-	id, err := strconv.Atoi(idStr)
+	id, err := strconv.Atoi(idParam)
 	if err != nil {
-		http.Error(w, "Invalid character ID", http.StatusBadRequest)
+		http.Error(w, "Invalid ID format", http.StatusBadRequest)
 		return
 	}
 
-	collection := client.Database("testing").Collection("characters")
-	var character models.Character
 	filter := bson.M{"id": id}
+	var character models.Character
 
-	err = collection.FindOne(context.Background(), filter).Decode(&character)
+	err = h.repo.FindOne(filter, &character)
 	if err != nil {
-		if err == mongo.ErrNoDocuments {
-			http.Error(w, "Character not found", http.StatusNotFound)
-			return
-		}
-		http.Error(w, "Failed to query MongoDB", http.StatusInternalServerError)
-		log.Println("MongoDB findOne error:", err)
+		http.Error(w, "Character not found", http.StatusNotFound)
 		return
 	}
 
-	utils.RespondJSON(w, character, http.StatusOK)
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(character)
 }
 
-func UpdateName(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
+func (h *CharHandler) UpdateName(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 
@@ -156,36 +154,66 @@ func UpdateName(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 		return
 	}
 
-	collection := client.Database("testing").Collection("characters")
+	filter := bson.M{"basestatus.name": input.NewName}
+	var character models.Character
 
-	count, err := collection.CountDocuments(context.Background(), bson.M{"baseStatus.name": input.NewName})
+	count, err := h.repo.CountDocuments(filter)
 	if err != nil {
-		http.Error(w, "Failed to query MongoDB for name uniqueness", http.StatusInternalServerError)
-		log.Println("MongoDB count error:", err)
+		http.Error(w, "Failed to check character uniqueness", http.StatusInternalServerError)
 		return
 	}
-	//log.Println("count:", count)
+
 	if count > 0 {
 		http.Error(w, "Character name already exists", http.StatusConflict)
 		return
 	}
 
-	filter := bson.M{"id": id}
-	update := bson.M{"$set": bson.M{"baseStatus.name": input.NewName}}
+	fmt.Println(count)
 
-	options := options.FindOneAndUpdate().SetReturnDocument(options.After)
+	filter = bson.M{"id": id}
+	update := bson.M{"$set": bson.M{"basestatus.name": input.NewName}}
 
-	var updatedCharacter models.Character
-	err = collection.FindOneAndUpdate(context.Background(), filter, update, options).Decode(&updatedCharacter)
+	err = h.repo.UpdateOne(filter, update)
 	if err != nil {
-		http.Error(w, "Update Name Failed", http.StatusInternalServerError)
+		http.Error(w, "Failed to update character", http.StatusInternalServerError)
 		return
 	}
 
-	utils.RespondJSON(w, updatedCharacter, http.StatusOK)
+	err = h.repo.FindOne(filter, &character)
+	if err != nil {
+		http.Error(w, "Character not found", http.StatusConflict)
+		return
+	}
+
+	utils.RespondJSON(w, character, http.StatusOK)
 }
 
-func Destroy(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
+// type DeleteCharacterRequest struct {
+// 	ID       string `uri:"id"`
+// 	Password string `json:"password"`
+// }
+
+func (h *CharHandler) DestroyChar(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	idParam := vars["id"]
+
+	id, err := strconv.Atoi(idParam)
+	if err != nil {
+		http.Error(w, "Invalid ID", http.StatusBadRequest)
+		return
+	}
+
+	filter := bson.M{"id": id}
+	err = h.repo.DeleteOne(filter)
+	if err != nil {
+		http.Error(w, "Failed to delete character", http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusNoContent)
+}
+
+func (h *CharHandler) LevelUpChar(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	idStr := vars["id"]
 
@@ -195,15 +223,35 @@ func Destroy(w http.ResponseWriter, r *http.Request, client *mongo.Client) {
 		return
 	}
 
-	collection := client.Database("testing").Collection("characters")
-
+	var character models.Character
 	filter := bson.M{"id": id}
-
-	_, err = collection.DeleteOne(context.Background(), filter)
+	err = h.repo.FindOne(filter, &character)
 	if err != nil {
-		http.Error(w, "Delete Failed.", http.StatusInternalServerError)
+		http.Error(w, "Character not found", http.StatusNotFound)
 		return
 	}
 
-	w.WriteHeader(http.StatusNoContent)
+	newHealth := character.BaseStatus.Health + 5
+	newAttack := character.BaseStatus.Attack + 1
+	newLevel := character.Level + 1
+
+	update := bson.M{"$set": bson.M{
+		"basestatus.health": newHealth,
+		"basestatus.attack": newAttack,
+		"level":             newLevel,
+	}}
+
+	err = h.repo.UpdateOne(filter, update)
+	if err != nil {
+		http.Error(w, "Level Up Failed", http.StatusInternalServerError)
+		return
+	}
+
+	err = h.repo.FindOne(filter, &character)
+	if err != nil {
+		http.Error(w, "Character not found", http.StatusConflict)
+		return
+	}
+
+	utils.RespondJSON(w, character, http.StatusOK)
 }

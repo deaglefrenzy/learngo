@@ -12,18 +12,19 @@ import (
 )
 
 type BaseStatus struct {
-	Name   string `json:"name"`
-	Health int    `json:"health"`
-	Attack int    `json:"attack"`
+	Name   string `json:"name" bson:"name"`
+	Health int    `json:"health" bson:"health"`
+	Attack int    `json:"attack" bson:"attack"`
 }
 
 type Character struct {
-	ID         int        `json:"id"`
-	BaseStatus BaseStatus `json:"baseStatus"`
-	Class      string     `json:"class"`
-	Shield     int        `json:"shield,omitempty"`
-	Critical   int        `json:"critical,omitempty"`
-	Mana       int        `json:"mana,omitempty"`
+	ID         int        `json:"id" bson:"id"`
+	BaseStatus BaseStatus `json:"baseStatus" bson:"basestatus"`
+	Class      string     `json:"class" bson:"class"`
+	Level      int        `json:"level" bson:"level"`
+	Shield     int        `json:"shield,omitempty" bson:"shield"`
+	Critical   int        `json:"critical,omitempty" bson:"critical"`
+	Mana       int        `json:"mana,omitempty" bson:"mana"`
 }
 
 func (c *BaseStatus) SetHealth(health int) {
@@ -37,6 +38,7 @@ func (c *BaseStatus) CharStatus() {
 func NewCharacter(id int, name string, class string) (Character, error) {
 	health := (rand.Intn(10) + 6) * 10
 	attack := rand.Intn(15) + 5
+	level := 1
 	shield := 0
 	critical := 0
 	mana := 0
@@ -56,6 +58,7 @@ func NewCharacter(id int, name string, class string) (Character, error) {
 			Health: health,
 			Attack: attack,
 		},
+		Level:    level,
 		Class:    class,
 		Shield:   shield,
 		Critical: critical,

@@ -69,6 +69,8 @@ package main
 import (
 	"fmt"
 	"go_tutorial/db"
+	"go_tutorial/handlers"
+	"go_tutorial/repository"
 	"go_tutorial/routes"
 	"log"
 	"net/http"
@@ -83,11 +85,13 @@ func main() {
 	}
 	defer db.CloseMongoDB(client)
 
-	database := client.Database("testing")
-	collection := database.Collection("characters")
-	fmt.Println("Using collection:", collection.Name())
+	charRepo := repository.NewMongoRepository(client, "testing", "characters")
+	charHandler := handlers.NewCharHandler(charRepo)
 
-	r := routes.NewRouter(client)
+	matchRepo := repository.NewMongoRepository(client, "testing", "matches")
+	matchHandler := handlers.NewMatchHandler(matchRepo)
+
+	r := routes.NewRouter(charHandler, matchHandler)
 
 	fmt.Println("Server listening to 8080")
 	http.ListenAndServe(":8080", r)
