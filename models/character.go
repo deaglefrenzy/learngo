@@ -44,11 +44,11 @@ func NewCharacter(id int, name string, class string) (Character, error) {
 	mana := 0
 	switch class {
 	case "paladin":
-		shield = rand.Intn(10) + 2
+		shield = rand.Intn(10) + 5
 	case "archer":
-		critical = rand.Intn(15) + 5
+		critical = rand.Intn(15) + 8
 	case "mage":
-		mana = rand.Intn(20) + 10
+		mana = rand.Intn(20) + 15
 	}
 
 	data := Character{
