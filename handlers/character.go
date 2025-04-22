@@ -1,16 +1,12 @@
 package handlers
 
 import (
-	"encoding/json"
-	"fmt"
 	"go_tutorial/models"
 	"go_tutorial/repository"
-	"go_tutorial/utils"
 	"log"
-	"net/http"
 	"strconv"
 
-	"github.com/gorilla/mux"
+	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
@@ -23,41 +19,39 @@ func NewCharHandler(repo *repository.MongoRepository) *CharHandler {
 	return &CharHandler{repo: repo}
 }
 
-func (h *CharHandler) CreateChar(w http.ResponseWriter, r *http.Request) {
+func (h *CharHandler) CreateChar(c *gin.Context) {
 
 	var input struct {
 		Name  string `json:"name"`
 		Class string `json:"class"`
 	}
 
-	err := json.NewDecoder(r.Body).Decode(&input)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+	if err := c.ShouldBindJSON(&input); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
 
 	if input.Name == "" || input.Class == "" {
-		http.Error(w, "Character name & class required.", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "Character name & class required."})
 		return
 	}
-	id := h.GetAutoIncrement(w, r)
+	id := h.GetAutoIncrement(c)
 
 	newChar, err := models.NewCharacter(id, input.Name, input.Class)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
 
 	if err = h.repo.Create(newChar); err != nil {
-		http.Error(w, "Failed to insert character into MongoDB", http.StatusInternalServerError)
-		log.Println("MongoDB insert error:", err)
+		c.JSON(500, gin.H{"error": "Failed to insert character into MongoDB"})
 		return
 	}
 
-	utils.RespondJSON(w, newChar, http.StatusCreated)
+	c.JSON(201, newChar)
 }
 
-func (h *CharHandler) GetAutoIncrement(w http.ResponseWriter, r *http.Request) int {
+func (h *CharHandler) GetAutoIncrement(c *gin.Context) int {
 
 	sequenceRepo := h.repo.WithCollection("sequence")
 
@@ -74,8 +68,7 @@ func (h *CharHandler) GetAutoIncrement(w http.ResponseWriter, r *http.Request) i
 
 	err = sequenceRepo.FindOne(filter, &result)
 	if err != nil {
-		log.Println("Auto increment find error:", err)
-		http.Error(w, "Failed to find auto increment", http.StatusInternalServerError)
+		c.JSON(500, gin.H{"error": "Failed to find auto increment"})
 		return 0
 	}
 
@@ -83,19 +76,19 @@ func (h *CharHandler) GetAutoIncrement(w http.ResponseWriter, r *http.Request) i
 
 	err = sequenceRepo.UpdateOne(filter, update)
 	if err != nil {
-		http.Error(w, "Failed to update auto increment", http.StatusInternalServerError)
+		c.JSON(500, gin.H{"error": "Failed to update auto increment"})
 		return 0
 	}
 
 	return result.Value
 }
 
-func (h *CharHandler) IndexChars(w http.ResponseWriter, r *http.Request) {
+func (h *CharHandler) IndexChars(c *gin.Context) {
 
 	var characters []models.Character
 	err := h.repo.FindMany(map[string]interface{}{}, &characters)
 	if err != nil {
-		http.Error(w, "Failed to fetch characters: "+err.Error(), http.StatusInternalServerError)
+		c.JSON(500, gin.H{"error": "Failed fetch characters"})
 		return
 	}
 
@@ -103,16 +96,15 @@ func (h *CharHandler) IndexChars(w http.ResponseWriter, r *http.Request) {
 		characters = []models.Character{}
 	}
 
-	utils.RespondJSON(w, characters, http.StatusOK)
+	c.JSON(201, characters)
 }
 
-func (h *CharHandler) ShowChar(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	idParam := vars["id"]
+func (h *CharHandler) ShowChar(c *gin.Context) {
+	idParam := c.Param("id")
 
 	id, err := strconv.Atoi(idParam)
 	if err != nil {
-		http.Error(w, "Invalid ID format", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "Invalid ID format"})
 		return
 	}
 
@@ -121,21 +113,19 @@ func (h *CharHandler) ShowChar(w http.ResponseWriter, r *http.Request) {
 
 	err = h.repo.FindOne(filter, &character)
 	if err != nil {
-		http.Error(w, "Character not found", http.StatusNotFound)
+		c.JSON(404, gin.H{"error": "Character not found"})
 		return
 	}
 
-	w.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(w).Encode(character)
+	c.JSON(200, character)
 }
 
-func (h *CharHandler) UpdateName(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	idStr := vars["id"]
+func (h *CharHandler) UpdateName(c *gin.Context) {
+	idParam := c.Param("id")
 
-	id, err := strconv.Atoi(idStr)
+	id, err := strconv.Atoi(idParam)
 	if err != nil {
-		http.Error(w, "Invalid character ID", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "Invalid ID format"})
 		return
 	}
 
@@ -143,49 +133,43 @@ func (h *CharHandler) UpdateName(w http.ResponseWriter, r *http.Request) {
 		NewName string `json:"name"`
 	}
 
-	err = json.NewDecoder(r.Body).Decode(&input)
-	if err != nil {
-		http.Error(w, err.Error(), http.StatusBadRequest)
+	if err := c.ShouldBindJSON(&input); err != nil {
+		c.JSON(400, gin.H{"error": err.Error()})
 		return
 	}
 
 	if input.NewName == "" {
-		http.Error(w, "New character name required.", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "New character name required."})
 		return
 	}
 
 	filter := bson.M{"basestatus.name": input.NewName}
-	var character models.Character
-
 	count, err := h.repo.CountDocuments(filter)
 	if err != nil {
-		http.Error(w, "Failed to check character uniqueness", http.StatusInternalServerError)
+		c.JSON(500, gin.H{"error": "Failed to check character uniqueness"})
 		return
 	}
 
 	if count > 0 {
-		http.Error(w, "Character name already exists", http.StatusConflict)
+		c.JSON(409, gin.H{"error": "Character name already exists"})
 		return
 	}
-
-	fmt.Println(count)
 
 	filter = bson.M{"id": id}
 	update := bson.M{"$set": bson.M{"basestatus.name": input.NewName}}
 
-	err = h.repo.UpdateOne(filter, update)
-	if err != nil {
-		http.Error(w, "Failed to update character", http.StatusInternalServerError)
+	if err := h.repo.UpdateOne(filter, update); err != nil {
+		c.JSON(500, gin.H{"error": "Failed to update character"})
 		return
 	}
 
-	err = h.repo.FindOne(filter, &character)
-	if err != nil {
-		http.Error(w, "Character not found", http.StatusConflict)
+	var character models.Character
+	if err := h.repo.FindOne(filter, &character); err != nil {
+		c.JSON(404, gin.H{"error": "Character not found"})
 		return
 	}
 
-	utils.RespondJSON(w, character, http.StatusOK)
+	c.JSON(200, character)
 }
 
 // type DeleteCharacterRequest struct {
@@ -193,33 +177,31 @@ func (h *CharHandler) UpdateName(w http.ResponseWriter, r *http.Request) {
 // 	Password string `json:"password"`
 // }
 
-func (h *CharHandler) DestroyChar(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	idParam := vars["id"]
+func (h *CharHandler) DestroyChar(c *gin.Context) {
+	idParam := c.Param("id")
 
 	id, err := strconv.Atoi(idParam)
 	if err != nil {
-		http.Error(w, "Invalid ID", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "Invalid ID format"})
 		return
 	}
 
 	filter := bson.M{"id": id}
 	err = h.repo.DeleteOne(filter)
 	if err != nil {
-		http.Error(w, "Failed to delete character", http.StatusInternalServerError)
+		c.JSON(500, gin.H{"error": "Failed to delete character"})
 		return
 	}
 
-	w.WriteHeader(http.StatusNoContent)
+	c.Status(204)
 }
 
-func (h *CharHandler) LevelUpChar(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	idStr := vars["id"]
+func (h *CharHandler) LevelUpChar(c *gin.Context) {
+	idParam := c.Param("id")
 
-	id, err := strconv.Atoi(idStr)
+	id, err := strconv.Atoi(idParam)
 	if err != nil {
-		http.Error(w, "Invalid character ID", http.StatusBadRequest)
+		c.JSON(400, gin.H{"error": "Invalid ID format"})
 		return
 	}
 
@@ -227,7 +209,7 @@ func (h *CharHandler) LevelUpChar(w http.ResponseWriter, r *http.Request) {
 	filter := bson.M{"id": id}
 	err = h.repo.FindOne(filter, &character)
 	if err != nil {
-		http.Error(w, "Character not found", http.StatusNotFound)
+		c.JSON(404, gin.H{"error": "Character not found"})
 		return
 	}
 
@@ -243,15 +225,15 @@ func (h *CharHandler) LevelUpChar(w http.ResponseWriter, r *http.Request) {
 
 	err = h.repo.UpdateOne(filter, update)
 	if err != nil {
-		http.Error(w, "Level Up Failed", http.StatusInternalServerError)
+		c.JSON(400, gin.H{"error": "Update level failed"})
 		return
 	}
 
 	err = h.repo.FindOne(filter, &character)
 	if err != nil {
-		http.Error(w, "Character not found", http.StatusConflict)
+		c.JSON(404, gin.H{"error": "Character not found"})
 		return
 	}
 
-	utils.RespondJSON(w, character, http.StatusOK)
+	c.JSON(200, character)
 }

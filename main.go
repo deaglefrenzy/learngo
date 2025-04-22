@@ -73,7 +73,8 @@ import (
 	"go_tutorial/repository"
 	"go_tutorial/routes"
 	"log"
-	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -91,9 +92,16 @@ func main() {
 	matchRepo := repository.NewMongoRepository(client, "testing", "matches")
 	matchHandler := handlers.NewMatchHandler(matchRepo)
 
-	r := routes.NewRouter(charHandler, matchHandler)
+	tournamentRepo := repository.NewMongoRepository(client, "testing", "tournaments")
+	tournamentHandler := handlers.NewTournamentHandler(tournamentRepo)
 
-	fmt.Println("Server listening to 8080")
-	http.ListenAndServe(":8080", r)
+	// r := routes.NewRouter(charHandler, matchHandler)
+	// fmt.Println("Server listening to 8080")
+	// http.ListenAndServe(":8080", r)
 
+	r := gin.Default() // Gin engine with Logger + Recovery middleware
+	routes.SetupRoutes(r, charHandler, matchHandler, tournamentHandler)
+
+	fmt.Println("Server listening on port 8080")
+	r.Run(":8080")
 }

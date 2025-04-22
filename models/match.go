@@ -9,8 +9,9 @@ type Match struct {
 	ID        string      `bson:"id,omitempty" json:"id,omitempty"`
 	TeamA     []Character `bson:"teamA" json:"teamA"`
 	TeamB     []Character `bson:"teamB" json:"teamB"`
-	CreatedAt time.Time   `bson:"createdAt" json:"createdAt"`
 	Winner    string      `bson:"winner" json:"winner"`
+	CreatedAt time.Time   `bson:"createdAt" json:"createdAt"`
+	DeletedAt time.Time   `bson:"deletedAt" json:"deletedAt"`
 }
 
 func CharAttackDefense(c Character) (Character, int, int) {
@@ -56,4 +57,68 @@ func CharAttackDefense(c Character) (Character, int, int) {
 		Mana:     newMana,
 	}
 	return char, att, def
+}
+
+func Battle(match Match) string {
+	teamA := match.TeamA
+	teamB := match.TeamB
+
+	totalHealthA := 0
+	totalHealthB := 0
+
+	for _, c := range teamA {
+		totalHealthA += c.BaseStatus.Health
+	}
+	for _, c := range teamB {
+		totalHealthB += c.BaseStatus.Health
+	}
+
+	dead := false
+	winner := ""
+
+	for !dead {
+		attackA := 0
+		attackB := 0
+		defenseA := 0
+		defenseB := 0
+		att := 0
+		def := 0
+		var newCharStat Character
+
+		for i := 0; i < len(teamA); i++ {
+			newCharStat, att, def = CharAttackDefense(teamA[i])
+			teamA[i] = newCharStat
+			attackA += att
+			defenseA += def
+		}
+		for i := 0; i < len(teamA); i++ {
+			newCharStat, att, def = CharAttackDefense(teamB[i])
+			teamB[i] = newCharStat
+			attackB += att
+			defenseB += def
+		}
+
+		damageA := attackB - defenseA
+		damageB := attackA - defenseB
+
+		totalHealthA -= damageA
+		totalHealthB -= damageB
+
+		if totalHealthA <= 0 {
+			dead = true
+			if totalHealthB <= 0 {
+				if totalHealthA < totalHealthB {
+					winner = "B"
+				} else {
+					winner = "A"
+				}
+			} else {
+				winner = "B"
+			}
+		} else if totalHealthB <= 0 {
+			dead = true
+			winner = "A"
+		}
+	}
+	return winner
 }
